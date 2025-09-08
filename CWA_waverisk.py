@@ -21,7 +21,7 @@ if not API_KEY:
 
 # 定義儲存目錄（相對路徑）
 BASE_DIR = os.path.join(os.getcwd(), "data")
-OUTPUT_DIR = os.path.join(os.getcwd(), "docs", "images")
+OUTPUT_DIR = os.path.join(os.getcwd(), "images")
 SHAPEFILE_DIR = os.path.join(os.getcwd(), "shapefiles")
 os.makedirs(BASE_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -592,3 +592,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
