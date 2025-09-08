@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4  # 移除 lfs: true
+      uses: actions/checkout@v4  # 不使用 Git LFS
 
     - name: Set up Python
       uses: actions/setup-python@v5
