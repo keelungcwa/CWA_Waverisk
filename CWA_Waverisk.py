@@ -379,8 +379,8 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
     
     colors = [COLOR_MAPPING[i] for i in [0, 1, 2, 3]]
     cmap = ListedColormap(colors)
-    
-    plt.rcParams['font.sans-serif'] = ['Noto Sans CJK TC', 'Arial', 'sans-serif']
+
+    plt.rcParams['font.sans-serif'] = ['Noto Sans CJK', 'Noto Sans CJK TC', 'Arial', 'sans-serif']
     plt.rcParams['axes.unicode_minus'] = False
     
     fig, (ax_map, ax_table) = plt.subplots(1, 2, figsize=(14, 7), dpi=100, gridspec_kw={'width_ratios': [1, 1.2]})
@@ -592,4 +592,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
