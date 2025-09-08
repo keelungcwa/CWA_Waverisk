@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4  # 不使用 Git LFS
+      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -23,6 +23,10 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y libgdal-dev libgeos-dev libproj-dev
         sudo apt-get install -y fonts-noto-cjk
+        # 清理 matplotlib 字型快取
+        rm -rf ~/.cache/matplotlib
+        # 確認字型安裝
+        fc-cache -fv
 
     - name: Install Python dependencies
       run: |
