@@ -28,6 +28,16 @@ os.makedirs(BASE_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(SHAPEFILE_DIR, exist_ok=True)
 
+# 定義字型路徑
+FONT_PATH = os.path.join(os.getcwd(), "fonts", "NotoSansTC-Regular.ttf")
+if not os.path.exists(FONT_PATH):
+    raise FileNotFoundError(f"❌ 字型檔案不存在: {FONT_PATH}")
+
+# 載入自定義字型
+font_prop = fm.FontProperties(fname=FONT_PATH)
+plt.rcParams['font.sans-serif'] = ['Noto Sans TC']  # 僅使用 NotoSansTC-Regular
+plt.rcParams['axes.unicode_minus'] = False
+
 # 定義檔案路徑和 URL
 FORECAST_JSON_FILE = os.path.join(BASE_DIR, "F-D0047-095.json")
 RISK_0H_JSON_FILE = os.path.join(BASE_DIR, "F-B0083-005.json")  # 當天00:00
@@ -381,12 +391,10 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
     colors = [COLOR_MAPPING[i] for i in [0, 1, 2, 3]]
     cmap = ListedColormap(colors)
     
-    plt.rcParams['font.sans-serif'] = ['Noto Sans CJK TC', 'Noto Sans TC', 'Noto Sans', 'DejaVu Sans', 'Arial', 'sans-serif']
-    plt.rcParams['axes.unicode_minus'] = False
-    # 打印可用字型
+    # 檢查載入的字型
     available_fonts = [f.name for f in fm.fontManager.ttflist]
-    print("Available fonts:", available_fonts)
-
+    logging.info(f"Available fonts: {available_fonts}")
+    
     fig, (ax_map, ax_table) = plt.subplots(1, 2, figsize=(14, 7), dpi=100, gridspec_kw={'width_ratios': [1, 1.2]})
     fig.subplots_adjust(wspace=0.05)
     
@@ -428,7 +436,7 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
                         xytext=(5, 5),
                         textcoords="offset points",
                         fontsize=8,
-                        fontfamily='Noto Sans CJK TC',
+                        fontproperties=font_prop,
                         color='black',
                         bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
                     )
@@ -450,7 +458,7 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
                 xytext=(-10, -5),
                 textcoords="offset points",
                 fontsize=8,
-                fontfamily='Noto Sans CJK TC',
+                fontproperties=font_prop,
                 color='black',
                 bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
             )
@@ -464,10 +472,10 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
         Circle((0, 0), radius=0.04, facecolor=COLOR_MAPPING[i], edgecolor='black', linewidth=1.5, label=RISK_MAPPING[i])
         for i in [3, 2, 1, 0]
     ]
-    ax_map.legend(handles=legend_elements, loc="upper left", title="風險等級", prop={'family': 'Noto Sans CJK TC', 'size': 9.6}, handlelength=1.2, handleheight=1.2)
+    ax_map.legend(handles=legend_elements, loc="upper left", title="風險等級", prop={'family': 'Noto Sans TC', 'size': 9.6}, handlelength=1.2, handleheight=1.2)
     
-    fig.suptitle("基隆北海岸(北北基桃)沿海與異常波浪(瘋狗浪)預報", fontsize=14, fontfamily='Noto Sans CJK TC', x=0.5, y=0.98)
-    fig.text(0.5, 0.92, f"預報時間: {forecast_time}", fontsize=10, fontfamily='Noto Sans CJK TC', ha='center')
+    fig.suptitle("基隆北海岸(北北基桃)沿海與異常波浪(瘋狗浪)預報", fontsize=14, fontproperties=font_prop, x=0.5, y=0.98)
+    fig.text(0.5, 0.92, f"預報時間: {forecast_time}", fontsize=10, fontproperties=font_prop, ha='center')
     
     forecast_df = forecast_df.merge(risk_df[["district", "max_risk", "max_risk_label"]], on="district", how="left")
     forecast_df["max_risk"] = forecast_df["max_risk"].fillna(-1).astype(int)
@@ -514,7 +522,7 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
                 table[(table_row_idx + 1, col)].set_facecolor(COLOR_MAPPING[row_data["final_risk"]])
     
     for (row, col), cell in table.get_celld().items():
-        cell.set_text_props(fontfamily='Noto Sans CJK TC')
+        cell.set_text_props(fontproperties=font_prop)
         if row == 0:
             cell.set_text_props(weight='bold')
     ax_table.axis('off')
@@ -522,8 +530,10 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
     ax_table.text(
         0.95, 0.09,
         f"中央氣象署 基隆氣象站 製圖\n{forecast_time.split(' ')[0]}\n資料來源：氣象署 鄉鎮沿海預報+異常浪(瘋狗浪)風險預報",
-        fontsize=10, fontfamily='Noto Sans CJK TC',
-        verticalalignment='bottom', horizontalalignment='right'
+        fontsize=10,
+        fontproperties=font_prop,
+        verticalalignment='bottom',
+        horizontalalignment='right'
     )
     
     # 計算前一天日期
@@ -596,7 +606,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
