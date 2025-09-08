@@ -11,9 +11,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        lfs: true  # 啟用 Git LFS
+      uses: actions/checkout@v4  # 移除 lfs: true
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -40,4 +38,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./images  # 部署 images/ 目錄
+        publish_dir: ./images
