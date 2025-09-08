@@ -380,8 +380,8 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
     
     colors = [COLOR_MAPPING[i] for i in [0, 1, 2, 3]]
     cmap = ListedColormap(colors)
-
-    plt.rcParams['font.sans-serif'] = ['Noto Sans CJK TC', 'Noto Sans CJK SC', 'Noto Sans', 'DejaVu Sans', 'Arial', 'sans-serif']
+    
+    plt.rcParams['font.sans-serif'] = ['Noto Sans CJK TC', 'Noto Sans TC', 'Noto Sans', 'DejaVu Sans', 'Arial', 'sans-serif']
     plt.rcParams['axes.unicode_minus'] = False
     # 打印可用字型
     available_fonts = [f.name for f in fm.fontManager.ttflist]
@@ -596,6 +596,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
