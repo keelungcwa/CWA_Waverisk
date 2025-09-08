@@ -23,15 +23,15 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y libgdal-dev libgeos-dev libproj-dev
         sudo apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra
-        # 下載 Noto Sans TC
-        wget https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSansTC/NotoSansTC-Regular.otf -P /usr/share/fonts/truetype/noto/
+        # 下載 Noto Sans TC 作為備用
+        wget https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSansTC/NotoSansTC-Regular.otf -P /usr/share/fonts/truetype/noto/ || echo "Failed to download NotoSansTC-Regular.otf"
         # 清理 matplotlib 字型快取
         rm -rf ~/.cache/matplotlib
         # 更新系統字型快取並列出所有字型
         fc-cache -fv
-        fc-list | grep "Noto Sans TC" || echo "No Noto Sans TC fonts found"
+        fc-list | grep "Noto Sans" || echo "No Noto Sans fonts found"
         # 檢查字型檔案
-        ls -l /usr/share/fonts/truetype/noto/ | grep "NotoSansTC" || echo "No NotoSansTC fonts found"
+        ls -l /usr/share/fonts/truetype/noto/ | grep "NotoSans" || echo "No NotoSans fonts found"
 
     - name: Install Python dependencies
       run: |
