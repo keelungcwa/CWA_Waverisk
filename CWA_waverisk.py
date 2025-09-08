@@ -522,14 +522,24 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
         verticalalignment='bottom', horizontalalignment='right'
     )
     
-    current_date = datetime.now().strftime("%Y%m%d")
-    output_filename = os.path.join(OUTPUT_DIR, f"CWA_waverisk_keelung_{current_date}.png")
-    latest_filename = os.path.join(OUTPUT_DIR, "latest.png")
+    # 計算前一天日期
+    previous_date = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+    output_filename = os.path.join(OUTPUT_DIR, f"CWA_waverisk_{previous_date}.png")
+    fixed_filename = os.path.join(OUTPUT_DIR, "CWA_waverisk.png")
+    
+    # 如果固定檔案名已存在，將其改名為前一天日期
+    if os.path.exists(fixed_filename):
+        try:
+            os.rename(fixed_filename, output_filename)
+            logging.info(f"已將 {fixed_filename} 改名為 {output_filename}")
+        except Exception as e:
+            logging.error(f"改名 {fixed_filename} 失敗: {e}")
+    
+    # 儲存新圖表
     plt.tight_layout(rect=[0, 0, 1, 0.93])
-    plt.savefig(output_filename, dpi=100, bbox_inches='tight')
-    plt.savefig(latest_filename, dpi=100, bbox_inches='tight')
+    plt.savefig(fixed_filename, dpi=100, bbox_inches='tight')
+    logging.info(f"圖表已儲存至: {fixed_filename}")
     plt.close()
-    logging.info(f"圖表已儲存至: {output_filename} 和 {latest_filename}")
 
 def main():
     current_time = datetime.now().strftime("%Y/%m/%d")
@@ -550,6 +560,13 @@ def main():
     if not os.path.exists(SHAPEFILE_PATH):
         logging.error(f"shapefile 不存在: {SHAPEFILE_PATH}")
         return
+    
+    # 檢查 shapefile 相關檔案
+    required_extensions = ['.shp', '.shx', '.dbf', '.prj']
+    for ext in required_extensions:
+        if not os.path.exists(os.path.join(SHAPEFILE_DIR, f"TOWN_MOI_1140318{ext}")):
+            logging.error(f"缺少 shapefile 相關檔案: {SHAPEFILE_DIR}/TOWN_MOI_1140318{ext}")
+            return
     
     # 處理資料並生成圖表
     file_paths = [
