@@ -6,6 +6,7 @@ import json
 import pandas as pd
 import geopandas as gpd
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 from matplotlib.colors import ListedColormap
 from matplotlib.patches import Circle
 from collections import Counter
@@ -380,9 +381,12 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
     colors = [COLOR_MAPPING[i] for i in [0, 1, 2, 3]]
     cmap = ListedColormap(colors)
 
-    plt.rcParams['font.sans-serif'] = ['Noto Sans CJK', 'Noto Sans CJK TC', 'Arial', 'sans-serif']
+    plt.rcParams['font.sans-serif'] = ['Noto Sans CJK TC', 'Noto Sans CJK SC', 'Noto Sans', 'DejaVu Sans', 'Arial', 'sans-serif']
     plt.rcParams['axes.unicode_minus'] = False
-    
+    # 打印可用字型
+    available_fonts = [f.name for f in fm.fontManager.ttflist]
+    print("Available fonts:", available_fonts)
+
     fig, (ax_map, ax_table) = plt.subplots(1, 2, figsize=(14, 7), dpi=100, gridspec_kw={'width_ratios': [1, 1.2]})
     fig.subplots_adjust(wspace=0.05)
     
@@ -592,5 +596,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
