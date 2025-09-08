@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+     <html lang="zh-TW">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>基隆北海岸天氣與波浪風險預報</title>
+         <style>
+             body { 
+                 font-family: 'Noto Sans TC', Arial, sans-serif; 
+                 text-align: center; 
+                 background-color: #f4f4f4; 
+                 margin: 0; 
+                 padding: 20px; 
+             }
+             .container { 
+                 max-width: 1200px; 
+                 margin: 0 auto; 
+                 background: white; 
+                 padding: 20px; 
+                 border-radius: 8px; 
+                 box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+             }
+             img { 
+                 max-width: 100%; 
+                 height: auto; 
+                 border: 1px solid #ddd; 
+                 border-radius: 4px; 
+             }
+             h1 { 
+                 color: #333; 
+                 font-size: 24px; 
+             }
+             p { 
+                 font-size: 16px; 
+                 color: #666; 
+             }
+             .last-updated { 
+                 font-size: 14px; 
+                 color: #999; 
+             }
+         </style>
+     </head>
+     <body>
+         <div class="container">
+             <h1>基隆北海岸(北北基桃)沿海與異常波浪(瘋狗浪)預報</h1>
+             <p>資料來源：中央氣象署</p>
+             <img src="images/CWA_waverisk.png" alt="天氣預報圖表" onerror="this.src='images/CWA_waverisk.png'; this.alt='圖表載入中...'">
+             <p class="last-updated">最後更新：自動生成（每日早上6點更新）</p>
+         </div>
+     </body>
+     </html>
