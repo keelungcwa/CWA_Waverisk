@@ -1,51 +1,153 @@
 <!DOCTYPE html>
-     <html lang="zh-TW">
-     <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>基隆北海岸天氣與波浪風險預報</title>
-         <style>
-             body { 
-                 font-family: 'Noto Sans TC', Arial, sans-serif; 
-                 text-align: center; 
-                 background-color: #f4f4f4; 
-                 margin: 0; 
-                 padding: 20px; 
-             }
-             .container { 
-                 max-width: 1200px; 
-                 margin: 0 auto; 
-                 background: white; 
-                 padding: 20px; 
-                 border-radius: 8px; 
-                 box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-             }
-             img { 
-                 max-width: 100%; 
-                 height: auto; 
-                 border: 1px solid #ddd; 
-                 border-radius: 4px; 
-             }
-             h1 { 
-                 color: #333; 
-                 font-size: 24px; 
-             }
-             p { 
-                 font-size: 16px; 
-                 color: #666; 
-             }
-             .last-updated { 
-                 font-size: 14px; 
-                 color: #999; 
-             }
-         </style>
-     </head>
-     <body>
-         <div class="container">
-             <h1>基隆北海岸(北北基桃)沿海與異常波浪(瘋狗浪)預報</h1>
-             <p>資料來源：中央氣象署</p>
-             <img src="images/CWA_waverisk.png" alt="天氣預報圖表" onerror="this.src='images/CWA_waverisk.png'; this.alt='圖表載入中...'">
-             <p class="last-updated">最後更新：自動生成（每日早上6點更新）</p>
-         </div>
-     </body>
-     </html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基隆北海岸天氣與波浪風險預報</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+        }
+        h1 {
+            color: #1a237e;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 16px;
+            color: #424242;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .last-updated {
+            font-size: 14px;
+            color: #757575;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .share-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+        }
+        .share-button:hover {
+            transform: translateY(-2px);
+        }
+        .line-share {
+            background-color: #00c300;
+        }
+        .facebook-share {
+            background-color: #1877f2;
+        }
+        .copy-link {
+            background-color: #546e7a;
+        }
+        .share-button i {
+            margin-right: 8px;
+        }
+        .footer-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-link a {
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer-link a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .share-button {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>基隆北海岸(北北基桃)沿海與異常波浪(瘋狗浪)預報</h1>
+        <p>資料來源：中央氣象署</p>
+        <img src="images/CWA_waverisk.png" alt="天氣預報圖表" onerror="this.src='images/CWA_waverisk.png'; this.alt='圖表載入中...'">
+        <div class="share-buttons">
+            <a href="https://line.me/R/msg/text/?基隆北海岸天氣與波浪風險預報%0D%0Ahttps://keelungcwa.github.io/keelungcwa/" class="share-button line-share" target="_blank">
+                <i class="fab fa-line"></i> 分享到 LINE
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://keelungcwa.github.io/keelungcwa/" class="share-button facebook-share" target="_blank">
+                <i class="fab fa-facebook-f"></i> 分享到 Facebook
+            </a>
+            <button class="share-button copy-link" onclick="copyToClipboard()">
+                <i class="fas fa-link"></i> 複製連結
+            </button>
+        </div>
+        <p class="last-updated">最後更新：自動生成（每日早上6點更新）</p>
+        <div class="footer-link">
+            <a href="https://keelungcwa.github.io/keelungcwa/" target="_blank">基隆氣象站 山海好厝邊</a>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        function copyToClipboard() {
+            const url = 'https://keelungcwa.github.io/keelungcwa/';
+            navigator.clipboard.writeText(url).then(() => {
+                alert('連結已複製到剪貼簿！');
+            }).catch(err => {
+                console.error('複製失敗:', err);
+                alert('複製連結失敗，請手動複製。');
+            });
+        }
+    </script>
+</body>
+</html>
