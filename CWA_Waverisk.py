@@ -546,7 +546,7 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
     
     ax_table.text(
         0.95, 0.09,
-        f"中央氣象署 基隆氣象站 製圖\n{forecast_time.split(' ')[0]}\n資料來源：氣象署 鄉鎮沿海預報+異常浪(瘋狗浪)風險預報",
+        f"中央氣象署 基隆氣象站 製圖 {forecast_time.split(' ')[0]}\n資料來源：氣象署 鄉鎮沿海預報+異常浪(瘋狗浪)風險預報",
         fontsize=10,
         fontproperties=font_prop,
         verticalalignment='bottom',
@@ -555,7 +555,7 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
     
     ax_table.text(
         0.95, 0.02,
-        "說明：本圖表呈現預報數據之最小~最大值，風險值取當日最大，方向取出現最多次數。\n詳細預報請以本署官網為準。",
+        "說明：本圖表呈現預報數據之最小~最大值，風險值取當日最大，方向取出現最多次數",
         fontsize=10,
         fontproperties=font_prop,
         verticalalignment='bottom',
@@ -625,3 +625,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
