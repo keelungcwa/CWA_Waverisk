@@ -35,8 +35,15 @@ if not os.path.exists(FONT_PATH):
 
 # 載入自定義字型
 font_prop = fm.FontProperties(fname=FONT_PATH)
-plt.rcParams['font.sans-serif'] = ['Noto Sans TC']  # 僅使用 NotoSansTC-Regular
+plt.rcParams['font.sans-serif'] = ['Noto Sans TC']
 plt.rcParams['axes.unicode_minus'] = False
+
+# 清理 matplotlib 字型快取
+font_cache_path = os.path.join(os.path.expanduser("~"), ".cache", "matplotlib")
+if os.path.exists(font_cache_path):
+    import shutil
+    shutil.rmtree(font_cache_path)
+    logging.info(f"已清理 matplotlib 字型快取: {font_cache_path}")
 
 # 定義檔案路徑和 URL
 FORECAST_JSON_FILE = os.path.join(BASE_DIR, "F-D0047-095.json")
@@ -394,6 +401,8 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
     # 檢查載入的字型
     available_fonts = [f.name for f in fm.fontManager.ttflist]
     logging.info(f"Available fonts: {available_fonts}")
+    if 'Noto Sans TC' not in available_fonts:
+        logging.warning("Noto Sans TC 未在字型清單中，圖例可能無法正確顯示")
     
     fig, (ax_map, ax_table) = plt.subplots(1, 2, figsize=(14, 7), dpi=100, gridspec_kw={'width_ratios': [1, 1.2]})
     fig.subplots_adjust(wspace=0.05)
@@ -472,10 +481,18 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
         Circle((0, 0), radius=0.04, facecolor=COLOR_MAPPING[i], edgecolor='black', linewidth=1.5, label=RISK_MAPPING[i])
         for i in [3, 2, 1, 0]
     ]
-    ax_map.legend(handles=legend_elements, loc="upper left", title="風險等級", prop={'family': 'Noto Sans TC', 'size': 9.6}, handlelength=1.2, handleheight=1.2)
+    ax_map.legend(
+        handles=legend_elements,
+        loc="upper left",
+        title="風險等級",
+        prop=font_prop,
+        title_fontproperties=font_prop,
+        handlelength=1.2,
+        handleheight=1.2
+    )
     
     fig.suptitle("基隆北海岸(北北基桃)沿海與異常波浪(瘋狗浪)預報", fontsize=14, fontproperties=font_prop, x=0.5, y=0.98)
-    fig.text(0.5, 0.92, f"預報時間: {forecast_time}", fontsize=10, fontproperties=font_prop, ha='center')
+    fig.text(0.5, 0.92, f"預報時間: {forecast_time}", fontsize=12, fontproperties=font_prop, ha='center')
     
     forecast_df = forecast_df.merge(risk_df[["district", "max_risk", "max_risk_label"]], on="district", how="left")
     forecast_df["max_risk"] = forecast_df["max_risk"].fillna(-1).astype(int)
@@ -536,12 +553,19 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
         horizontalalignment='right'
     )
     
-    # 計算前一天日期
+    ax_table.text(
+        0.95, 0.02,
+        "說明：本圖表呈現預報數據之最小~最大值，風險值取當日最大，方向取出現最多次數。\n詳細預報請以本署官網為準。",
+        fontsize=10,
+        fontproperties=font_prop,
+        verticalalignment='bottom',
+        horizontalalignment='right'
+    )
+    
     previous_date = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
     output_filename = os.path.join(OUTPUT_DIR, f"CWA_waverisk_{previous_date}.png")
     fixed_filename = os.path.join(OUTPUT_DIR, "CWA_waverisk.png")
     
-    # 如果固定檔案名已存在，將其改名為前一天日期
     if os.path.exists(fixed_filename):
         try:
             os.rename(fixed_filename, output_filename)
@@ -549,7 +573,6 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
         except Exception as e:
             logging.error(f"改名 {fixed_filename} 失敗: {e}")
     
-    # 儲存新圖表
     plt.tight_layout(rect=[0, 0, 1, 0.93])
     plt.savefig(fixed_filename, dpi=100, bbox_inches='tight')
     logging.info(f"圖表已儲存至: {fixed_filename}")
@@ -558,7 +581,6 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
 def main():
     current_time = datetime.now().strftime("%Y/%m/%d")
     
-    # 下載檔案
     files_to_download = [
         (FORECAST_URL, FORECAST_JSON_FILE, "鄉鎮天氣預報檔案"),
         (RISK_0H_URL, RISK_0H_JSON_FILE, "異常波浪風險檔案（當天00:00）"),
@@ -570,19 +592,16 @@ def main():
         if not download_file(url, file_path):
             logging.warning(f"無法下載 {description}，請檢查網路連線或URL")
     
-    # 檢查 shapefile 是否存在
     if not os.path.exists(SHAPEFILE_PATH):
         logging.error(f"shapefile 不存在: {SHAPEFILE_PATH}")
         return
     
-    # 檢查 shapefile 相關檔案
     required_extensions = ['.shp', '.shx', '.dbf', '.prj']
     for ext in required_extensions:
         if not os.path.exists(os.path.join(SHAPEFILE_DIR, f"TOWN_MOI_1140318{ext}")):
             logging.error(f"缺少 shapefile 相關檔案: {SHAPEFILE_DIR}/TOWN_MOI_1140318{ext}")
             return
     
-    # 處理資料並生成圖表
     file_paths = [
         (RISK_0H_JSON_FILE, '0h'),
         (RISK_12H_JSON_FILE, '12h'),
