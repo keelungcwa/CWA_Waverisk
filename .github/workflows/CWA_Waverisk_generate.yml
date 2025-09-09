@@ -2,7 +2,9 @@ name: CWA Coastal Wave and Risk Forecast
 
 on:
   schedule:
+    - cron: '0 21 * * *'  # 每天 UTC 21:00（台灣時間早上5點）
     - cron: '0 22 * * *'  # 每天 UTC 22:00（台灣時間早上6點）
+    - cron: '0 23 * * *'  # 每天 UTC 23:00（台灣時間早上7點）
   workflow_dispatch:  # 允許手動觸發
 
 jobs:
