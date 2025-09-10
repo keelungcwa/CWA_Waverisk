@@ -4,149 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>基隆北海岸沿海與異常波浪(瘋狗浪)預報</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --gemini-bg-light: #f8f9fa; /* 接近白色的淺背景 */
-            --gemini-bg-gradient-start: #e8f0fe; /* 淺藍色漸層起點 */
-            --gemini-bg-gradient-end: #f0f4f9; /* 淺灰色漸層終點 */
-            --gemini-card-bg: #ffffff;
-            --gemini-text-primary: #202124;
-            --gemini-text-secondary: #5f6368;
-            --gemini-link-color: #1a73e8;
-            --gemini-button-line: #00c300;
-            --gemini-button-facebook: #1877f2;
-            --gemini-button-copy: #757575; /* 灰色系 */
-            --gemini-shadow: rgba(0, 0, 0, 0.08);
-            --gemini-border-radius: 16px; /* 更大的圓角 */
-        }
-
         body {
-            font-family: 'Roboto', 'Noto Sans TC', Arial, sans-serif;
+            font-family: 'Noto Sans TC', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: var(--gemini-bg-light); /* 清爽淺背景 */
-            /* 也可以嘗試漸層效果，但通常Gemini更偏向純色或極輕微漸層 */
-            /* background: linear-gradient(135deg, var(--gemini-bg-gradient-start) 0%, var(--gemini-bg-gradient-end) 100%); */
+            background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: var(--gemini-text-primary);
+            font-size: 14px; /* 整體字體縮小 */
         }
         .container {
-            max-width: 1000px;
-            margin: 20px;
-            background: var(--gemini-card-bg); /* 白色卡片背景 */
-            padding: 40px; /* 增加內邊距 */
-            border-radius: var(--gemini-border-radius); /* 圓角 */
-            box-shadow: 0 1px 3px var(--gemini-shadow), 0 10px 15px -5px rgba(0, 0, 0, 0.05); /* 更細緻的陰影 */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 900px; /* 容器寬度調整 */
+            margin: 10px; /* 外邊距縮小 */
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px; /* 內邊距縮小 */
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
         }
         .container:hover {
-            transform: translateY(-3px); /* 輕微上浮 */
-            box-shadow: 0 4px 8px var(--gemini-shadow), 0 15px 20px -7px rgba(0, 0, 0, 0.08); /* hover時陰影加深 */
+            transform: translateY(-5px);
         }
         h1 {
-            color: var(--gemini-text-primary);
-            font-size: 32px; /* 根據Gemini風格調整，通常標題會大一些 */
-            margin-bottom: 15px;
-            font-weight: 500; /* 中等粗細 */
-            text-align: center; /* 標題居中 */
+            color: #1a237e;
+            font-size: 20px; /* 標題再縮小 */
+            margin-bottom: 5px; /* 標題下方間距縮小 */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         p {
-            font-size: 16px;
-            color: var(--gemini-text-secondary);
-            line-height: 1.7;
-            margin: 10px 0;
+            font-size: 14px; /* 段落字體縮小 */
+            color: #424242;
+            line-height: 1.4; /* 行距縮小 */
+            margin: 5px 0;
+            text-align: center;
         }
         .last-updated {
-            font-size: 13px;
-            color: var(--gemini-text-secondary);
-            margin-top: 30px; /* 增加間距 */
-            text-align: center;
+            font-size: 12px;
+            color: #757575;
+            margin-top: 10px; /* 間距縮小 */
         }
         img {
             max-width: 100%;
             height: auto;
-            border-radius: var(--gemini-border-radius); /* 與容器相同的圓角 */
-            border: none; /* 移除邊框 */
-            margin: 25px auto; /* 居中圖片並增加上下間距 */
-            display: block; /* 讓 margin: auto 生效 */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 圖片輕微陰影 */
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            margin: 15px 0; /* 圖片上下間距縮小 */
             transition: transform 0.3s ease;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         img:hover {
-            transform: scale(1.01); /* 輕微放大 */
+            transform: scale(1.02);
         }
         .share-buttons {
             display: flex;
             justify-content: center;
-            gap: 12px; /* 調整按鈕間距 */
-            margin-top: 30px;
-            flex-wrap: wrap; /* 小螢幕時換行 */
+            gap: 10px; /* 按鈕間距縮小 */
+            margin-top: 15px; /* 上方間距縮小 */
+            flex-wrap: wrap;
         }
         .share-button {
             display: inline-flex;
             align-items: center;
-            padding: 12px 24px; /* 調整按鈕大小 */
-            border-radius: 28px; /* 更圓的按鈕 */
+            padding: 8px 16px; /* 按鈕大小縮小 */
+            border-radius: 20px; /* 圓角縮小 */
             text-decoration: none;
             color: white;
-            font-size: 15px;
+            font-size: 12px; /* 按鈕字體縮小 */
             font-weight: 500;
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease;
             cursor: pointer;
-            border: none; /* 移除邊框 */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 按鈕陰影 */
         }
         .share-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* hover時陰影加深 */
         }
         .line-share {
-            background-color: var(--gemini-button-line);
+            background-color: #00c300;
         }
         .facebook-share {
-            background-color: var(--gemini-button-facebook);
+            background-color: #1877f2;
         }
         .copy-link {
-            background-color: var(--gemini-button-copy);
+            background-color: #546e7a;
         }
         .share-button i {
-            margin-right: 8px;
+            margin-right: 5px; /* 圖標間距縮小 */
         }
         .footer-link {
             text-align: center;
-            margin-top: 40px; /* 增加底部連結間距 */
+            margin-top: 10px;
         }
         .footer-link a {
-            color: var(--gemini-link-color);
+            color: #1565c0;
             text-decoration: none;
             font-weight: 500;
-            font-size: 15px;
-            transition: color 0.3s ease;
+            font-size: 12px; /* 頁腳連結字體縮小 */
         }
         .footer-link a:hover {
             text-decoration: underline;
-            color: #1558b0; /* hover時顏色稍深 */
         }
         @media (max-width: 600px) {
             .container {
-                margin: 15px;
-                padding: 25px;
-                border-radius: 12px;
+                margin: 5px;
+                padding: 15px;
             }
             h1 {
-                font-size: 26px;
+                font-size: 18px;
             }
             .share-button {
-                padding: 10px 18px;
-                font-size: 13px;
-                border-radius: 24px;
-            }
-            .share-buttons {
-                gap: 10px;
+                padding: 6px 12px;
+                font-size: 10px;
             }
         }
     </style>
@@ -166,15 +139,15 @@
                 <i class="fas fa-link"></i> 複製連結
             </button>
         </div>
-        <p class="last-updated">資料來源：中央氣象署，最後更新：自動生成（每日早上6點更新）</p>
         <div class="footer-link">
+            <p class="last-updated">資料來源：中央氣象署，每日早上6點自動更新</p>
             <a href="https://keelungcwa.github.io/keelungcwa/" target="_blank">基隆氣象站 山海好厝邊</a>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script>
         function copyToClipboard() {
-            const url = 'https://keelungcwa.github.io/CWA_Waverisk/'; // 修改為您指定的新網址
+            const url = 'https://keelungcwa.github.io/CWA_Waverisk/';
             navigator.clipboard.writeText(url).then(() => {
                 alert('連結已複製到剪貼簿！');
             }).catch(err => {
