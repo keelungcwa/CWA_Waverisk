@@ -562,16 +562,7 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
         horizontalalignment='right'
     )
     
-    previous_date = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
-    output_filename = os.path.join(OUTPUT_DIR, f"CWA_waverisk_{previous_date}.png")
     fixed_filename = os.path.join(OUTPUT_DIR, "CWA_waverisk.png")
-    
-    if os.path.exists(fixed_filename):
-        try:
-            os.rename(fixed_filename, output_filename)
-            logging.info(f"已將 {fixed_filename} 改名為 {output_filename}")
-        except Exception as e:
-            logging.error(f"改名 {fixed_filename} 失敗: {e}")
     
     plt.tight_layout(rect=[0, 0, 1, 0.93])
     plt.savefig(fixed_filename, dpi=100, bbox_inches='tight')
@@ -625,4 +616,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
