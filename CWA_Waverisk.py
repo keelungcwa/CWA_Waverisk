@@ -179,7 +179,8 @@ def load_forecast_data(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
         
-        today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+        # 將當前時間轉為台灣時區（UTC+08:00）
+        today = (datetime.now() + timedelta(hours=8)).replace(hour=0, minute=0, second=0, microsecond=0)
         start_time = today.strftime("%Y-%m-%dT%H:%M:%S+08:00")
         end_time = (today + timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%S+08:00")
         
