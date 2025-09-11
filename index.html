@@ -59,7 +59,7 @@
             height: 400px;
             border-radius: 8px;
             border: 2px solid #e0e0e0;
-            z-index: 1; /* 確保地圖不被覆蓋 */
+            z-index: 1;
         }
         .forecast-info {
             flex: 1;
@@ -156,7 +156,7 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             font-size: 13px;
-            z-index: 1000; /* 確保圖例在最上層 */
+            z-index: 1000;
         }
         .legend i {
             width: 18px;
@@ -164,54 +164,65 @@
             display: inline-block;
             margin-right: 5px;
         }
+        .leaflet-control-locate {
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            padding: 6px;
+        }
+        .leaflet-control-locate i {
+            font-size: 16px;
+            color: #333;
+        }
         @media (max-width: 600px) {
             body {
-                font-size: 15px;
+                font-size: 14px; /* 減小 1 級 */
             }
             .container {
                 margin: 5px;
                 padding: 15px;
             }
             h1 {
-                font-size: 21px;
+                font-size: 20px; /* 從 21px 減小到 20px */
             }
             p {
-                font-size: 16px;
+                font-size: 15px; /* 從 16px 減小到 15px */
             }
             .upper-section {
                 flex-direction: column;
-                gap: 10px; /* 減少間距以確保地圖和資訊區塊清晰分隔 */
+                gap: 10px;
             }
             #map {
                 height: 300px;
-                min-height: 300px; /* 確保地圖高度 */
-                width: 100%; /* 確保地圖寬度適應容器 */
+                min-height: 300px;
+                width: 100%;
                 z-index: 1;
-                position: relative; /* 確保地圖定位正確 */
+                position: relative;
             }
             .forecast-info {
                 max-height: none;
-                font-size: 17px;
-                width: 100%; /* 確保預報資訊寬度適應容器 */
+                font-size: 16px; /* 從 17px 減小到 16px */
+                width: 100%;
             }
             .forecast-info h3 {
-                font-size: 19px;
+                font-size: 18px; /* 從 19px 減小到 18px */
             }
             .forecast-time {
-                font-size: 14px;
+                font-size: 13px; /* 從 14px 減小到 13px */
             }
             .footer-link p {
-                font-size: 14px;
+                font-size: 13px; /* 從 14px 減小到 13px */
             }
             .share-button {
                 padding: 8px 14px;
-                font-size: 14px;
+                font-size: 13px; /* 從 14px 減小到 13px */
             }
             .footer-link a {
-                font-size: 14px;
+                font-size: 13px; /* 從 14px 減小到 13px */
             }
             .legend {
-                font-size: 14px;
+                font-size: 13px; /* 從 14px 減小到 13px */
             }
         }
     </style>
@@ -260,7 +271,12 @@
         }
 
         // 初始化地圖
-        const map = L.map('map', {zoomControl: false}).setView([25.14667, 121.78639], 10);
+        const map = L.map('map', {
+            zoomControl: false,
+            minZoom: 8, // 限制最小縮放級別，防止縮放到全世界
+            maxBounds: [[21.8, 118.0], [26.5, 123.0]], // 限制地圖範圍為台灣周邊
+            maxBoundsViscosity: 1.0 // 防止拖動超出範圍
+        }).setView([25.14667, 121.78639], 10); // 預設以基隆港為中心
         L.control.zoom({ position: 'topright' }).addTo(map);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -280,6 +296,20 @@
         };
         legend.addTo(map);
 
+        // 添加定位按鈕
+        const locateControl = L.control({ position: 'topright' });
+        locateControl.onAdd = function () {
+            const div = L.DomUtil.create('div', 'leaflet-control-locate');
+            div.innerHTML = '<i class="fas fa-location-dot"></i>';
+            div.title = '定位到我的位置';
+            div.onclick = function () {
+                getUserLocation();
+                map.invalidateSize();
+            };
+            return div;
+        };
+        locateControl.addTo(map);
+
         // 關注的行政區
         const focusAreas = {
             "基隆市": ["中正區", "中山區"],
@@ -287,6 +317,9 @@
             "桃園市": ["蘆竹區", "大園區", "觀音區", "新屋區"],
             "台北市": []
         };
+
+        // 北台灣邊界範圍
+        const northTaiwanBounds = [[24.7, 121.0], [25.5, 122.0]];
 
         // 載入預報資料和TopoJSON
         let waveData = [];
@@ -376,12 +409,8 @@
             try {
                 const topoLayer = topojson.feature(topoData, topoData.objects.layer1);
                 layer.addData(topoLayer).addTo(map);
-                // 自動縮放地圖以顯示關注區域
-                const bounds = layer.getBounds();
-                if (bounds.isValid()) {
-                    map.fitBounds(bounds);
-                }
-                // 確保地圖在行動版上正確渲染
+                // 聚焦北台灣
+                map.fitBounds(northTaiwanBounds);
                 setTimeout(() => map.invalidateSize(), 100);
             } catch (err) {
                 console.error('TopoJSON 解析失敗:', err);
@@ -411,7 +440,7 @@
             document.getElementById('forecast-info').innerHTML = info;
         }
 
-        // 獲取用戶位置並定位最近的行政區
+        // 獲取用戶位置並定位
         function getUserLocation() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(position => {
@@ -431,21 +460,21 @@
                         }
                     });
                     if (closest) {
-                        map.setView([closest.latitude, closest.longitude], 12);
+                        map.setView([userLat, userLon], 12);
                         displayForecastInfo(closest);
                     } else {
+                        map.setView([25.14667, 121.78639], 12); // 基隆港
                         const defaultData = waveData.find(d => d.county === '基隆市' && d.district === '中正區') || {};
-                        map.setView([25.14667, 121.78639], 12);
                         displayForecastInfo(defaultData);
                     }
                 }, () => {
+                    map.setView([25.14667, 121.78639], 12); // 基隆港
                     const defaultData = waveData.find(d => d.county === '基隆市' && d.district === '中正區') || {};
-                    map.setView([25.14667, 121.78639], 12);
                     displayForecastInfo(defaultData);
                 });
             } else {
+                map.setView([25.14667, 121.78639], 12); // 基隆港
                 const defaultData = waveData.find(d => d.county === '基隆市' && d.district === '中正區') || {};
-                map.setView([25.14667, 121.78639], 12);
                 displayForecastInfo(defaultData);
             }
         }
@@ -464,7 +493,7 @@
         // 頁面加載時設置預報時間並確保地圖渲染
         window.onload = function() {
             setForecastTime();
-            setTimeout(() => map.invalidateSize(), 100); // 確保地圖在行動版上正確渲染
+            setTimeout(() => map.invalidateSize(), 100);
         };
     </script>
 </body>
