@@ -59,10 +59,11 @@ jobs:
         publish_dir: ./
         keep_files: false  # 清除舊檔案，確保最新
         destination_dir: ./
-        include: images/CWA_waverisk.png data/waverisk_data.json  # 修正為空格分隔的字符串
+        include: images/CWA_waverisk.png data/waverisk_data.json  # 空格分隔的字符串
 
     - name: Upload JSON as artifact (for debugging)
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4  # 升級到 v4
       with:
         name: waverisk-data
         path: data/waverisk_data.json
+        retention-days: 7  # 保留 7 天
