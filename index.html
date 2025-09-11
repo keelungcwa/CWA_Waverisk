@@ -299,14 +299,14 @@
         function getArrow(direction, isFlow) {
             const normalized = direction.replace(/偏/g, '').replace(/風/g, '');
             const ARROW_MAPPING = {
-                '北': isFlow ? '↑' : '↓',  // 來向：從北來=↓ ; 去向：往北=↑
-                '南': isFlow ? '↓' : '↑',  // 來向：從南來=↑ ; 去向：往南=↓
-                '東': isFlow ? '←' : '→',  // 來向：從東來=← (180度反轉) ; 去向：往東=← ? 等待，根據用戶反轉
-                '西': isFlow ? '→' : '←',  // 來向：從西來=→ ; 去向：往西=→
-                '東北': isFlow ? '↙' : '↖',  // 來向：從東北來=↖ (反轉原↗)
-                '西北': isFlow ? '↘' : '↗',  // 來向：從西北來=↗ (反轉原↖)
-                '東南': isFlow ? '↗' : '↙',  // 來向：從東南來=↙ (反轉原↘)
-                '西南': isFlow ? '↖' : '↘'    // 來向：從西南來=↘ (反轉原↙)
+                '北': isFlow ? '↑' : '↓',  // 
+                '南': isFlow ? '↓' : '↑',  // 
+                '東': isFlow ? '←' : '→',  // 
+                '西': isFlow ? '→' : '←',  // 
+                '東北': isFlow ? '↙' : '↗',  // 
+                '西北': isFlow ? '↘' : '↖',  // 
+                '東南': isFlow ? '↗' : '↙',  // 
+                '西南': isFlow ? '↖' : '↘'    // 
             };
             return ARROW_MAPPING[normalized] || '';
         }
