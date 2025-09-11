@@ -59,7 +59,7 @@ jobs:
         publish_dir: ./
         keep_files: false  # 清除舊檔案，確保最新
         destination_dir: ./
-        include: ['images/CWA_waverisk.png', 'data/waverisk_data.json']
+        include: images/CWA_waverisk.png data/waverisk_data.json  # 修正為空格分隔的字符串
 
     - name: Upload JSON as artifact (for debugging)
       uses: actions/upload-artifact@v3
