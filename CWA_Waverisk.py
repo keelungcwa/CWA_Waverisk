@@ -50,6 +50,7 @@ FORECAST_JSON_FILE = os.path.join(BASE_DIR, "F-D0047-095.json")
 RISK_0H_JSON_FILE = os.path.join(BASE_DIR, "F-B0083-005.json")  # 當天00:00
 RISK_12H_JSON_FILE = os.path.join(BASE_DIR, "F-B0083-006.json")  # 當天12:00
 RISK_24H_JSON_FILE = os.path.join(BASE_DIR, "F-B0083-007.json")  # 次日00:00
+WAVERISK_JSON_FILE = os.path.join(BASE_DIR, "waverisk_data.json")  # 新增輸出 JSON 檔案路徑
 SHAPEFILE_PATH = os.path.join(SHAPEFILE_DIR, "TOWN_MOI_1140318.shp")
 
 FORECAST_URL = f"https://opendata.cwa.gov.tw/fileapi/v1/opendataapi/F-D0047-095?Authorization={API_KEY}&downloadType=WEB&format=JSON"
@@ -105,10 +106,11 @@ def download_file(url, file_path, retries=1, timeout=10):
             response.raise_for_status()
             with open(file_path, 'wb') as f:
                 f.write(response.content)
-            logging.info(f"成功下載並覆蓋檔案到: {file_path}")
+            logging.info(f"成功下載並儲存到: {file_path}")
+            logging.info(f"檔案大小: {os.path.getsize(file_path)} bytes")
             return True
         except requests.exceptions.RequestException as e:
-            logging.error(f"下載檔案失敗 {url} (嘗試 {attempt + 1}/{retries + 1}): {e}")
+            logging.error(f"下載失敗 {url} (嘗試 {attempt + 1}/{retries + 1}): {e}")
             if attempt < retries:
                 logging.info(f"等待 5 秒後重試...")
                 time.sleep(5)
@@ -495,10 +497,20 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
     fig.suptitle("基隆北海岸(北北基桃)沿海與異常波浪(瘋狗浪)預報", fontsize=14, fontproperties=font_prop, x=0.5, y=0.98)
     fig.text(0.5, 0.92, f"預報時間: {forecast_time}", fontsize=12, fontproperties=font_prop, ha='center')
     
+    # 合併 forecast_df 和 risk_df，計算最終風險等級
     forecast_df = forecast_df.merge(risk_df[["district", "max_risk", "max_risk_label"]], on="district", how="left")
     forecast_df["max_risk"] = forecast_df["max_risk"].fillna(-1).astype(int)
     forecast_df["max_risk_label"] = forecast_df["max_risk_label"].fillna("尚未建置")
     forecast_df["final_risk"] = forecast_df.apply(lambda row: max(row["alert_level"], row["max_risk"]) if row["max_risk"] != -1 else row["alert_level"], axis=1)
+    
+    # 將 forecast_df 輸出為 JSON 檔案
+    try:
+        output_data = forecast_df.to_dict(orient='records')
+        with open(WAVERISK_JSON_FILE, 'w', encoding='utf-8') as f:
+            json.dump(output_data, f, ensure_ascii=False, indent=2)
+        logging.info(f"成功儲存波浪風險數據到: {WAVERISK_JSON_FILE}")
+    except Exception as e:
+        logging.error(f"儲存波浪風險數據失敗: {e}")
     
     table_data = [
         [
@@ -571,7 +583,7 @@ def plot_north_taiwan_map(forecast_df, risk_df, taiwan_gdf, district_risk_df, fo
     plt.close()
 
 def main():
-    current_time = datetime.now().strftime("%Y/%m/%d")
+    current_time = (datetime.now() + timedelta(hours=8)).strftime("%Y/%m/%d")
     
     files_to_download = [
         (FORECAST_URL, FORECAST_JSON_FILE, "鄉鎮天氣預報檔案"),
