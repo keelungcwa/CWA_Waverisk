@@ -62,7 +62,7 @@
         }
         .forecast-info {
             flex: 1;
-            font-size: 15px;
+            font-size: 16px;
             color: #424242;
             padding: 10px;
             background: #f5f5f5;
@@ -73,7 +73,7 @@
         }
         .forecast-info h3 {
             margin: 0 0 10px 0;
-            font-size: 17px;
+            font-size: 18px;
             color: #1a237e;
         }
         .forecast-time {
@@ -189,10 +189,10 @@
             }
             .forecast-info {
                 max-height: none;
-                font-size: 16px;
+                font-size: 17px;
             }
             .forecast-info h3 {
-                font-size: 18px;
+                font-size: 19px;
             }
             .forecast-time {
                 font-size: 14px;
@@ -222,7 +222,7 @@
         <div class="upper-section">
             <div id="map"></div>
             <div class="forecast-info" id="forecast-info">
-                <p class="forecast-time">預報時間：9/11 00 時至 9/12 00 時</p>
+                <p class="forecast-time" id="forecast-time"></p>
                 <p>請點選地圖上的行政區以查看詳細預報資料。</p>
             </div>
         </div>
@@ -248,6 +248,16 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
     <script>
+        // 動態設置預報時間
+        function setForecastTime() {
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(today.getDate() + 1);
+            const todayStr = `${today.getMonth() + 1}/${today.getDate()}`;
+            const tomorrowStr = `${tomorrow.getMonth() + 1}/${tomorrow.getDate()}`;
+            document.getElementById('forecast-time').innerText = `預報時間：${todayStr} 00 時至 ${tomorrowStr} 00 時`;
+        }
+
         // 初始化地圖
         const map = L.map('map', {zoomControl: false}).setView([25.14667, 121.78639], 10);
         L.control.zoom({ position: 'topright' }).addTo(map);
@@ -289,11 +299,13 @@
             topoData = topo;
             addTopoLayer();
             getUserLocation();
+            setForecastTime(); // 初始設置預報時間
         })
         .catch(err => {
             console.error('載入資料失敗:', err);
             const defaultData = waveData.find(d => d.county === '基隆市' && d.district === '中正區') || {};
             displayForecastInfo(defaultData);
+            setForecastTime();
         });
 
         // 根據 final_risk 設定顏色
@@ -325,6 +337,10 @@
 
         // 添加TopoJSON圖層
         function addTopoLayer() {
+            if (!topoData || !topoData.objects || !topoData.objects.layer1) {
+                console.error('TopoJSON 格式錯誤或無 layer1 物件');
+                return;
+            }
             const layer = L.geoJson(null, {
                 style: function(feature) {
                     const county = feature.properties.COUNTYNAME;
@@ -342,17 +358,31 @@
                 onEachFeature: function(feature, layer) {
                     const county = feature.properties.COUNTYNAME;
                     const district = feature.properties.TOWNNAME;
-                    const data = waveData.find(d => d.county === county && d.district === district);
-                    if (data) {
-                        layer.bindPopup(`${county} ${district}`);
-                        layer.on('click', function() {
+                    layer.bindPopup(`${county} ${district}`);
+                    layer.on('click', function() {
+                        const data = waveData.find(d => d.county === county && d.district === district);
+                        if (data) {
                             displayForecastInfo(data);
-                        });
-                    }
+                        } else {
+                            displayForecastInfo({});
+                        }
+                    });
+                },
+                filter: function(feature) {
+                    return feature.geometry && feature.geometry.type !== null && (feature.geometry.type === 'Polygon' || feature.geometry.type === 'MultiPolygon');
                 }
             });
-            const topoLayer = topojson.feature(topoData, topoData.objects.town);
-            layer.addData(topoLayer).addTo(map);
+            try {
+                const topoLayer = topojson.feature(topoData, topoData.objects.layer1);
+                layer.addData(topoLayer).addTo(map);
+                // 自動縮放地圖以顯示關注區域
+                const bounds = layer.getBounds();
+                if (bounds.isValid()) {
+                    map.fitBounds(bounds);
+                }
+            } catch (err) {
+                console.error('TopoJSON 解析失敗:', err);
+            }
         }
 
         // 顯示預報資訊
@@ -427,6 +457,11 @@
                 alert('複製連結失敗，請手動複製。');
             });
         }
+
+        // 頁面加載時設置預報時間
+        window.onload = function() {
+            setForecastTime();
+        };
     </script>
 </body>
 </html>
