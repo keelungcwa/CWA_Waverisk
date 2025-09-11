@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        ref: main  # 確保從 main 分支檢出
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -41,10 +43,26 @@ jobs:
         CWA_API_KEY: ${{ secrets.CWA_API_KEY }}
       run: python CWA_Waverisk.py
 
-    - name: Commit and push images to main branch
+    - name: Commit and push images and data to main branch
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add images/*
-        git commit -m "Add generated wave risk charts to images/ directory" || echo "No changes to commit"
+        mkdir -p data images  # 確保 data 和 images 資料夾存在
+        git add images/* data/waverisk_data.json
+        git commit -m "Add generated wave risk charts and data to images/ and data/ directories" || echo "No changes to commit"
         git push origin main
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        keep_files: false  # 清除舊檔案，確保最新
+        destination_dir: ./
+        include: ['images/CWA_waverisk.png', 'data/waverisk_data.json']
+
+    - name: Upload JSON as artifact (for debugging)
+      uses: actions/upload-artifact@v3
+      with:
+        name: waverisk-data
+        path: data/waverisk_data.json
