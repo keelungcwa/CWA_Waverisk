@@ -59,6 +59,7 @@
             height: 400px;
             border-radius: 8px;
             border: 2px solid #e0e0e0;
+            z-index: 1; /* 確保地圖不被覆蓋 */
         }
         .forecast-info {
             flex: 1;
@@ -70,6 +71,7 @@
             text-align: left;
             overflow-y: auto;
             max-height: 400px;
+            z-index: 0;
         }
         .forecast-info h3 {
             margin: 0 0 10px 0;
@@ -81,17 +83,11 @@
             color: #757575;
             margin-bottom: 10px;
         }
-        .last-updated {
-            font-size: 13px;
-            color: #757575;
-            margin-top: 10px;
-            text-align: center;
-        }
-        .footer-source {
+        .footer-link p {
             font-size: 13px;
             color: #757575;
             text-align: center;
-            margin-top: 5px;
+            margin: 5px 0;
         }
         img {
             max-width: 100%;
@@ -160,6 +156,7 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             font-size: 13px;
+            z-index: 1000; /* 確保圖例在最上層 */
         }
         .legend i {
             width: 18px;
@@ -183,13 +180,19 @@
             }
             .upper-section {
                 flex-direction: column;
+                gap: 10px; /* 減少間距以確保地圖和資訊區塊清晰分隔 */
             }
             #map {
                 height: 300px;
+                min-height: 300px; /* 確保地圖高度 */
+                width: 100%; /* 確保地圖寬度適應容器 */
+                z-index: 1;
+                position: relative; /* 確保地圖定位正確 */
             }
             .forecast-info {
                 max-height: none;
                 font-size: 17px;
+                width: 100%; /* 確保預報資訊寬度適應容器 */
             }
             .forecast-info h3 {
                 font-size: 19px;
@@ -197,10 +200,7 @@
             .forecast-time {
                 font-size: 14px;
             }
-            .last-updated {
-                font-size: 14px;
-            }
-            .footer-source {
+            .footer-link p {
                 font-size: 14px;
             }
             .share-button {
@@ -239,8 +239,9 @@
             </button>
         </div>
         <div class="footer-link">
-            <p class="last-updated">預報更新時間：每天早上 6 時</p>
-            <p class="footer-source">資料來源：中央氣象署</p>
+            <p>資料來源：中央氣象署</p>
+            <p>預報更新時間：每天早上 6 時</p>
+            <p>說明：本圖表呈現預報數據之最小~最大值，風險值取當日最大，方向取出現最多次數</p>
             <a href="https://keelungcwa.github.io/keelungcwa/" target="_blank">基隆氣象站 山海好厝邊</a>
         </div>
     </div>
@@ -299,7 +300,7 @@
             topoData = topo;
             addTopoLayer();
             getUserLocation();
-            setForecastTime(); // 初始設置預報時間
+            setForecastTime();
         })
         .catch(err => {
             console.error('載入資料失敗:', err);
@@ -380,6 +381,8 @@
                 if (bounds.isValid()) {
                     map.fitBounds(bounds);
                 }
+                // 確保地圖在行動版上正確渲染
+                setTimeout(() => map.invalidateSize(), 100);
             } catch (err) {
                 console.error('TopoJSON 解析失敗:', err);
             }
@@ -458,9 +461,10 @@
             });
         }
 
-        // 頁面加載時設置預報時間
+        // 頁面加載時設置預報時間並確保地圖渲染
         window.onload = function() {
             setForecastTime();
+            setTimeout(() => map.invalidateSize(), 100); // 確保地圖在行動版上正確渲染
         };
     </script>
 </body>
