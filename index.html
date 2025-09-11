@@ -21,7 +21,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            font-size: 14px;
+            font-size: 14px; /* 基礎字體大小不變 */
         }
         .container {
             max-width: 900px;
@@ -43,7 +43,7 @@
             text-align: center;
         }
         p {
-            font-size: 14px;
+            font-size: 15px; /* 所有 p 標籤字體調大1級 */
             color: #424242;
             line-height: 1.4;
             margin: 5px 0;
@@ -55,14 +55,14 @@
             margin-bottom: 20px;
         }
         #map {
-            flex: 3;
+            flex: 2; /* 地圖佔 2/3 */
             height: 400px;
             border-radius: 8px;
             border: 2px solid #e0e0e0;
         }
         .forecast-info {
-            flex: 1;
-            font-size: 14px;
+            flex: 1; /* 預報資訊佔 1/3 */
+            font-size: 15px; /* 預報資訊字體調大1級 */
             color: #424242;
             padding: 10px;
             background: #f5f5f5;
@@ -73,16 +73,16 @@
         }
         .forecast-info h3 {
             margin: 0 0 10px 0;
-            font-size: 16px;
+            font-size: 17px; /* 預報資訊內的 h3 字體調大1級 */
             color: #1a237e;
         }
         .forecast-time {
-            font-size: 12px;
+            font-size: 13px; /* 預報時間字體調大1級 */
             color: #757575;
             margin-bottom: 10px;
         }
         .last-updated {
-            font-size: 12px;
+            font-size: 13px; /* 最後更新時間字體調大1級 */
             color: #757575;
             margin-top: 10px;
             text-align: center;
@@ -115,7 +115,7 @@
             border-radius: 20px;
             text-decoration: none;
             color: white;
-            font-size: 12px;
+            font-size: 13px; /* 分享按鈕字體調大1級 */
             font-weight: 500;
             transition: background-color 0.3s ease, transform 0.2s ease;
             cursor: pointer;
@@ -143,7 +143,7 @@
             color: #1565c0;
             text-decoration: none;
             font-weight: 500;
-            font-size: 12px;
+            font-size: 13px; /* footer 連結字體調大1級 */
         }
         .footer-link a:hover {
             text-decoration: underline;
@@ -153,6 +153,7 @@
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 13px; /* 圖例字體調大1級 */
         }
         .legend i {
             width: 18px;
@@ -166,17 +167,23 @@
             text-align: center;
         }
         .custom-icon .circle {
-            width: 36px;
-            height: 36px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
         }
         @media (max-width: 600px) {
+            body {
+                font-size: 15px; /* 行動版基礎字體也調大1級 */
+            }
             .container {
                 margin: 5px;
                 padding: 15px;
             }
             h1 {
-                font-size: 18px;
+                font-size: 19px; /* 行動版 h1 也調大1級 */
+            }
+            p {
+                font-size: 16px; /* 行動版 p 標籤字體調大1級 */
             }
             .upper-section {
                 flex-direction: column;
@@ -186,10 +193,26 @@
             }
             .forecast-info {
                 max-height: none;
+                font-size: 16px; /* 行動版預報資訊字體調大1級 */
+            }
+            .forecast-info h3 {
+                font-size: 18px; /* 行動版預報資訊 h3 字體調大1級 */
+            }
+            .forecast-time {
+                font-size: 14px; /* 行動版預報時間字體調大1級 */
+            }
+            .last-updated {
+                font-size: 14px; /* 行動版最後更新時間字體調大1級 */
             }
             .share-button {
                 padding: 8px 14px;
-                font-size: 12px;
+                font-size: 14px; /* 行動版分享按鈕字體調大1級 */
+            }
+            .footer-link a {
+                font-size: 14px; /* 行動版 footer 連結字體調大1級 */
+            }
+            .legend {
+                font-size: 14px; /* 行動版圖例字體調大1級 */
             }
         }
     </style>
@@ -236,10 +259,10 @@
         legend.onAdd = function () {
             const div = L.DomUtil.create('div', 'legend');
             div.innerHTML = `
-                <div><i style="background:#00A65180"></i> 低（浪高 0-1.5 公尺或風險低）</div>
-                <div><i style="background:#FFF20080"></i> 中（浪高 1.5-3 公尺或風險中）</div>
-                <div><i style="background:#ED1C2480"></i> 高（浪高 3-6 公尺或風險高）</div>
                 <div><i style="background:#EE00EE80"></i> 極高（浪高 ≥6 公尺）</div>
+                <div><i style="background:#ED1C2480"></i> 高（浪高 3-6 公尺或風險高）</div>
+                <div><i style="background:#FFF20080"></i> 中（浪高 1.5-3 公尺或風險中）</div>
+                <div><i style="background:#00A65180"></i> 低（浪高 0-1.5 公尺或風險低）</div>
             `;
             return div;
         };
@@ -272,18 +295,18 @@
             return COLOR_MAPPING[level] || '#00A65180'; // 預設低風險
         }
 
-        // 方向到箭頭的映射
+        // 方向到箭頭的映射 (來向：從南來=↑, 從北來=↓, 從東來=←, 從西來=→)
         function getArrow(direction, isFlow) {
-            const normalized = direction.includes('偏') ? direction.replace(/偏/g, '') : direction;
+            const normalized = direction.replace(/偏/g, '').replace(/風/g, '');
             const ARROW_MAPPING = {
-                '北': isFlow ? '↓' : '↑',
-                '南': isFlow ? '↑' : '↓',
-                '東': '→',
-                '西': '←',
-                '東北': isFlow ? '↙' : '↗',
-                '西北': isFlow ? '↘' : '↖',
-                '東南': isFlow ? '↖' : '↘',
-                '西南': isFlow ? '↗' : '↙'
+                '北': isFlow ? '↑' : '↓',  // 來向：從北來=↓ ; 去向：往北=↑
+                '南': isFlow ? '↓' : '↑',  // 來向：從南來=↑ ; 去向：往南=↓
+                '東': isFlow ? '←' : '→',  // 來向：從東來=← (180度反轉) ; 去向：往東=← ? 等待，根據用戶反轉
+                '西': isFlow ? '→' : '←',  // 來向：從西來=→ ; 去向：往西=→
+                '東北': isFlow ? '↙' : '↖',  // 來向：從東北來=↖ (反轉原↗)
+                '西北': isFlow ? '↘' : '↗',  // 來向：從西北來=↗ (反轉原↖)
+                '東南': isFlow ? '↗' : '↙',  // 來向：從東南來=↙ (反轉原↘)
+                '西南': isFlow ? '↖' : '↘'    // 來向：從西南來=↘ (反轉原↙)
             };
             return ARROW_MAPPING[normalized] || '';
         }
@@ -296,8 +319,8 @@
                     const icon = L.divIcon({
                         className: 'custom-icon',
                         html: `<div class="circle" style="background-color: ${color};"></div>`,
-                        iconSize: [36, 36],
-                        iconAnchor: [18, 18]
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]  // 調整錨點，使圓形中心對齊經緯度點
                     });
                     const marker = L.marker([d.latitude, d.longitude], { icon: icon }).addTo(map);
                     marker.bindPopup(`${d.location_name}`);
@@ -313,15 +336,15 @@
             const info = d.county ? `
                 <p class="forecast-time">預報時間：當天 00 時至隔日 00 時</p>
                 <h3>${d.county} ${d.district}沿海</h3>
-                <p>風速 (公尺/秒)：${d.wind_speed_range || '無資料'}</p>
-                <p>風級：${d.beaufort_scale_range || '無資料'}</p>
-                <p>風向：${d.wind_direction || '無資料'} ${getArrow(d.wind_direction, false)}</p>
-                <p>浪高 (公尺)：${d.wave_height_range || '無資料'}</p>
-                <p>浪向：${d.wave_direction || '無資料'} ${getArrow(d.wave_direction, false)}</p>
-                <p>浪週期 (秒)：${d.wave_period_range || '無資料'}</p>
-                <p>異常波浪 (瘋狗浪) 風險：${d.max_risk_label || '無資料'}</p>
-                <p>流速 (公尺/秒)：${d.ocean_current_speed_range || '無資料'}</p>
-                <p>流向：${d.ocean_current_direction || '無資料'} ${getArrow(d.ocean_current_direction, true)}</p>
+                <p><strong>風速 (公尺/秒)：</strong>${d.wind_speed_range || '無資料'}</p>
+                <p><strong>風級：</strong>${d.beaufort_scale_range || '無資料'}</p>
+                <p><strong>風向：</strong>${d.wind_direction || '無資料'} ${getArrow(d.wind_direction, false)}</p>
+                <p><strong>浪高 (公尺)：</strong>${d.wave_height_range || '無資料'}</p>
+                <p><strong>浪向：</strong>${d.wave_direction || '無資料'} ${getArrow(d.wave_direction, false)}</p>
+                <p><strong>浪週期 (秒)：</strong>${d.wave_period_range || '無資料'}</p>
+                <p><strong>異常波浪 (瘋狗浪) 風險：</strong>${d.max_risk_label || '無資料'}</p>
+                <p><strong>流速 (公尺/秒)：</strong>${d.ocean_current_speed_range || '無資料'}</p>
+                <p><strong>流向：</strong>${d.ocean_current_direction || '無資料'} ${getArrow(d.ocean_current_direction, true)}</p>
             ` : `<p>請點選地圖上的標記以查看詳細預報資料。</p>`;
             document.getElementById('forecast-info').innerHTML = info;
         }
