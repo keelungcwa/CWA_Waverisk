@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>基隆北海岸沿海與異常波浪(瘋狗浪)預報</title>
+    <meta name="description" content="基隆北海岸沿海與異常波浪（瘋狗浪）預報，查看中央氣象署每日更新的波浪資訊及互動地圖。">
+    <meta property="og:title" content="基隆北海岸瘋狗浪預報">
+    <meta property="og:description" content="查看中央氣象署每日更新的基隆北海岸波浪預報資訊！">
+    <meta property="og:image" content="https://keelungcwa.github.io/CWA_Waverisk/images/CWA_waverisk.png">
+    <meta property="og:url" content="https://keelungcwa.github.io/CWA_Waverisk/">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>🌊基隆北海岸沿海與異常波浪(瘋狗浪)預報</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <style>
         body {
             font-family: 'Noto Sans TC', Arial, sans-serif;
@@ -13,15 +20,14 @@
             background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
             min-height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 14px; /* 整體字體縮小 */
+            flex-direction: column;
+            font-size: 14px;
         }
         .container {
-            max-width: 900px; /* 容器寬度調整 */
-            margin: 10px; /* 外邊距縮小 */
+            max-width: 900px;
+            margin: 10px auto;
             background: rgba(255, 255, 255, 0.95);
-            padding: 20px; /* 內邊距縮小 */
+            padding: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease;
@@ -31,29 +37,64 @@
         }
         h1 {
             color: #1a237e;
-            font-size: 20px; /* 標題再縮小 */
-            margin-bottom: 5px; /* 標題下方間距縮小 */
+            font-size: 24px;
+            margin-bottom: 5px;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         p {
-            font-size: 14px; /* 段落字體縮小 */
+            font-size: 15px;
             color: #424242;
-            line-height: 1.4; /* 行距縮小 */
+            line-height: 1.4;
             margin: 5px 0;
-            text-align: center;
+            text-align: left;
         }
-        .last-updated {
-            font-size: 12px;
+        .upper-section {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        #map {
+            flex: 2;
+            height: 400px;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            z-index: 1;
+        }
+        .forecast-info {
+            flex: 1;
+            font-size: 16px;
+            color: #424242;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            text-align: left;
+            overflow-y: auto;
+            max-height: 400px;
+            z-index: 0;
+        }
+        .forecast-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            color: #1a237e;
+        }
+        .forecast-time {
+            font-size: 13px;
             color: #757575;
-            margin-top: 10px; /* 間距縮小 */
+            margin-bottom: 10px;
+        }
+        .footer-link p {
+            font-size: 13px;
+            color: #757575;
+            text-align: center;
+            margin: 5px 0;
         }
         img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             border: 2px solid #e0e0e0;
-            margin: 15px 0; /* 圖片上下間距縮小 */
+            margin: 15px 0;
             transition: transform 0.3s ease;
             display: block;
             margin-left: auto;
@@ -65,18 +106,18 @@
         .share-buttons {
             display: flex;
             justify-content: center;
-            gap: 10px; /* 按鈕間距縮小 */
-            margin-top: 15px; /* 上方間距縮小 */
+            gap: 10px;
+            margin-top: 15px;
             flex-wrap: wrap;
         }
         .share-button {
             display: inline-flex;
             align-items: center;
-            padding: 8px 16px; /* 按鈕大小縮小 */
-            border-radius: 20px; /* 圓角縮小 */
+            padding: 8px 16px;
+            border-radius: 20px;
             text-decoration: none;
             color: white;
-            font-size: 12px; /* 按鈕字體縮小 */
+            font-size: 13px;
             font-weight: 500;
             transition: background-color 0.3s ease, transform 0.2s ease;
             cursor: pointer;
@@ -94,7 +135,7 @@
             background-color: #546e7a;
         }
         .share-button i {
-            margin-right: 5px; /* 圖標間距縮小 */
+            margin-right: 5px;
         }
         .footer-link {
             text-align: center;
@@ -104,48 +145,341 @@
             color: #1565c0;
             text-decoration: none;
             font-weight: 500;
-            font-size: 12px; /* 頁腳連結字體縮小 */
+            font-size: 13px;
         }
         .footer-link a:hover {
             text-decoration: underline;
         }
+        .legend {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 13px;
+            z-index: 1000;
+        }
+        .legend i {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .leaflet-control-locate {
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            padding: 6px;
+        }
+        .leaflet-control-locate i {
+            font-size: 16px;
+            color: #333;
+        }
         @media (max-width: 600px) {
+            body {
+                font-size: 14px; /* 減小 1 級 */
+            }
             .container {
                 margin: 5px;
                 padding: 15px;
             }
             h1 {
-                font-size: 18px;
+                font-size: 20px; /* 從 21px 減小到 20px */
+            }
+            p {
+                font-size: 15px; /* 從 16px 減小到 15px */
+            }
+            .upper-section {
+                flex-direction: column;
+                gap: 10px;
+            }
+            #map {
+                height: 300px;
+                min-height: 300px;
+                width: 100%;
+                z-index: 1;
+                position: relative;
+            }
+            .forecast-info {
+                max-height: none;
+                font-size: 16px; /* 從 17px 減小到 16px */
+                width: 100%;
+            }
+            .forecast-info h3 {
+                font-size: 18px; /* 從 19px 減小到 18px */
+            }
+            .forecast-time {
+                font-size: 13px; /* 從 14px 減小到 13px */
+            }
+            .footer-link p {
+                font-size: 13px; /* 從 14px 減小到 13px */
             }
             .share-button {
-                padding: 6px 12px;
-                font-size: 10px;
+                padding: 8px 14px;
+                font-size: 13px; /* 從 14px 減小到 13px */
+            }
+            .footer-link a {
+                font-size: 13px; /* 從 14px 減小到 13px */
+            }
+            .legend {
+                font-size: 13px; /* 從 14px 減小到 13px */
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>基隆北海岸沿海與異常波浪(瘋狗浪)預報</h1>
-        <img src="images/CWA_waverisk.png" alt="天氣預報圖表" onerror="this.src='images/CWA_waverisk.png'; this.alt='圖表載入中...'">
+        <h1>🌊基隆北海岸沿海與異常波浪(瘋狗浪)預報</h1>
+        <div class="upper-section">
+            <div id="map"></div>
+            <div class="forecast-info" id="forecast-info">
+                <p class="forecast-time" id="forecast-time"></p>
+                <p>請點選地圖上的行政區以查看詳細預報資料。</p>
+            </div>
+        </div>
+        <img src="images/CWA_waverisk.png" alt="中央氣象署基隆北海岸異常波浪預報圖表" width="800" height="450" onerror="this.src='images/fallback.png'; this.alt='圖表載入失敗';">
         <div class="share-buttons">
-            <a href="https://social-plugins.line.me/lineit/share?url=https://keelungcwa.github.io/CWA_Waverisk/&text=【基隆北海岸瘋狗浪預報】請參考最新沿海波浪資訊！" class="share-button line-share" target="_blank">
+            <a href="https://social-plugins.line.me/lineit/share?url=https://keelungcwa.github.io/CWA_Waverisk/&text=【基隆北海岸瘋狗浪預報】請參考最新沿海波浪資訊！" class="share-button line-share" target="_blank" aria-label="分享到 LINE">
                 <i class="fab fa-line"></i> 分享到 LINE
             </a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://keelungcwa.github.io/CWA_Waverisk/&quote=【基隆北海岸瘋狗浪預報】請參考最新沿海波浪資訊！" class="share-button facebook-share" target="_blank">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://keelungcwa.github.io/CWA_Waverisk/&quote=【基隆北海岸瘋狗浪預報】請參考最新沿海波浪資訊！" class="share-button facebook-share" target="_blank" aria-label="分享到 Facebook">
                 <i class="fab fa-facebook-f"></i> 分享到 Facebook
             </a>
-            <button class="share-button copy-link" onclick="copyToClipboard()">
+            <button class="share-button copy-link" onclick="copyToClipboard()" aria-label="複製網頁連結">
                 <i class="fas fa-link"></i> 複製連結
             </button>
         </div>
         <div class="footer-link">
-            <p class="last-updated">資料來源：中央氣象署，每日早上6點自動更新</p>
+            <p>資料來源：中央氣象署</p>
+            <p>預報更新時間：每天早上 6 時</p>
+            <p>說明：本圖表呈現預報數據之最小~最大值，風險值取當日最大，方向取出現最多次數</p>
             <a href="https://keelungcwa.github.io/keelungcwa/" target="_blank">基隆氣象站 山海好厝邊</a>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
     <script>
+        // 動態設置預報時間
+        function setForecastTime() {
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(today.getDate() + 1);
+            const todayStr = `${today.getMonth() + 1}/${today.getDate()}`;
+            const tomorrowStr = `${tomorrow.getMonth() + 1}/${tomorrow.getDate()}`;
+            document.getElementById('forecast-time').innerText = `預報時間：${todayStr} 00 時至 ${tomorrowStr} 00 時`;
+        }
+
+        // 初始化地圖
+        const map = L.map('map', {
+            zoomControl: false,
+            minZoom: 8, // 限制最小縮放級別，防止縮放到全世界
+            maxBounds: [[21.8, 118.0], [26.5, 123.0]], // 限制地圖範圍為台灣周邊
+            maxBoundsViscosity: 1.0 // 防止拖動超出範圍
+        }).setView([25.14667, 121.78639], 10); // 預設以基隆港為中心
+        L.control.zoom({ position: 'topright' }).addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // 添加圖例
+        const legend = L.control({ position: 'topleft' });
+        legend.onAdd = function () {
+            const div = L.DomUtil.create('div', 'legend');
+            div.innerHTML = `
+                <div><i style="background:#EE00EE80"></i> 極高（浪高 ≥6 公尺）</div>
+                <div><i style="background:#ED1C2480"></i> 高（浪高 3-6 公尺或風險高）</div>
+                <div><i style="background:#FFF20080"></i> 中（浪高 1.5-3 公尺或風險中）</div>
+                <div><i style="background:#00A65180"></i> 低（浪高 0-1.5 公尺或風險低）</div>
+            `;
+            return div;
+        };
+        legend.addTo(map);
+
+        // 添加定位按鈕
+        const locateControl = L.control({ position: 'topright' });
+        locateControl.onAdd = function () {
+            const div = L.DomUtil.create('div', 'leaflet-control-locate');
+            div.innerHTML = '<i class="fas fa-location-dot"></i>';
+            div.title = '定位到我的位置';
+            div.onclick = function () {
+                getUserLocation();
+                map.invalidateSize();
+            };
+            return div;
+        };
+        locateControl.addTo(map);
+
+        // 關注的行政區
+        const focusAreas = {
+            "基隆市": ["中正區", "中山區"],
+            "新北市": ["貢寮區", "瑞芳區", "萬里區", "金山區", "石門區", "三芝區", "淡水區", "八里區", "林口區"],
+            "桃園市": ["蘆竹區", "大園區", "觀音區", "新屋區"],
+            "台北市": []
+        };
+
+        // 北台灣邊界範圍
+        const northTaiwanBounds = [[24.7, 121.0], [25.5, 122.0]];
+
+        // 載入預報資料和TopoJSON
+        let waveData = [];
+        let topoData = null;
+        Promise.all([
+            fetch('https://keelungcwa.github.io/CWA_Waverisk/data/waverisk_data.json').then(res => res.json()),
+            fetch('https://keelungcwa.github.io/CWA_Waverisk/data/twTown1982.topo.json').then(res => res.json())
+        ])
+        .then(([wave, topo]) => {
+            waveData = wave;
+            topoData = topo;
+            addTopoLayer();
+            getUserLocation();
+            setForecastTime();
+        })
+        .catch(err => {
+            console.error('載入資料失敗:', err);
+            const defaultData = waveData.find(d => d.county === '基隆市' && d.district === '中正區') || {};
+            displayForecastInfo(defaultData);
+            setForecastTime();
+        });
+
+        // 根據 final_risk 設定顏色
+        function getColor(level) {
+            const COLOR_MAPPING = {
+                0: '#00A65180', // 低風險
+                1: '#FFF20080', // 中風險
+                2: '#ED1C2480', // 高風險
+                3: '#EE00EE80'  // 極高風險
+            };
+            return COLOR_MAPPING[level] || '#00A65180';
+        }
+
+        // 方向到箭頭的映射
+        function getArrow(direction, isFlow) {
+            const normalized = direction.replace(/偏/g, '').replace(/風/g, '');
+            const ARROW_MAPPING = {
+                '北': isFlow ? '↑' : '↓',  // 風向浪向來向：北->↓, 海流去向：北->↑
+                '南': isFlow ? '↓' : '↑',  // 風向浪向來向：南->↑, 海流去向：南->↓
+                '東': isFlow ? '→' : '←',  // 風向浪向來向：東->←, 海流去向：東->→
+                '西': isFlow ? '←' : '→',  // 風向浪向來向：西->→, 海流去向：西->←
+                '東北': isFlow ? '↗' : '↙',  // 風向浪向來向：東北->↙, 海流去向：東北->↗
+                '西北': isFlow ? '↖' : '↘',  // 風向浪向來向：西北->↘, 海流去向：西北->↖
+                '東南': isFlow ? '↘' : '↖',  // 風向浪向來向：東南->↖, 海流去向：東南->↘
+                '西南': isFlow ? '↙' : '↗'   // 風向浪向來向：西南->↗, 海流去向：西南->↙
+            };
+            return ARROW_MAPPING[normalized] || '';
+        }
+
+        // 添加TopoJSON圖層
+        function addTopoLayer() {
+            if (!topoData || !topoData.objects || !topoData.objects.layer1) {
+                console.error('TopoJSON 格式錯誤或無 layer1 物件');
+                return;
+            }
+            const layer = L.geoJson(null, {
+                style: function(feature) {
+                    const county = feature.properties.COUNTYNAME;
+                    const district = feature.properties.TOWNNAME;
+                    const isFocused = focusAreas[county] && focusAreas[county].includes(district);
+                    const data = waveData.find(d => d.county === county && d.district === district);
+                    return {
+                        fillColor: data ? getColor(data.final_risk || 0) : '#FFFFFF00',
+                        weight: isFocused ? 2 : 0.5,
+                        opacity: 1,
+                        color: isFocused ? '#333' : '#999',
+                        fillOpacity: data ? 0.7 : 0
+                    };
+                },
+                onEachFeature: function(feature, layer) {
+                    const county = feature.properties.COUNTYNAME;
+                    const district = feature.properties.TOWNNAME;
+                    layer.bindPopup(`${county} ${district}`);
+                    layer.on('click', function() {
+                        const data = waveData.find(d => d.county === county && d.district === district);
+                        if (data) {
+                            displayForecastInfo(data);
+                        } else {
+                            displayForecastInfo({});
+                        }
+                    });
+                },
+                filter: function(feature) {
+                    return feature.geometry && feature.geometry.type !== null && (feature.geometry.type === 'Polygon' || feature.geometry.type === 'MultiPolygon');
+                }
+            });
+            try {
+                const topoLayer = topojson.feature(topoData, topoData.objects.layer1);
+                layer.addData(topoLayer).addTo(map);
+                // 聚焦北台灣
+                map.fitBounds(northTaiwanBounds);
+                setTimeout(() => map.invalidateSize(), 100);
+            } catch (err) {
+                console.error('TopoJSON 解析失敗:', err);
+            }
+        }
+
+        // 顯示預報資訊
+        function displayForecastInfo(d) {
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(today.getDate() + 1);
+            const todayStr = `${today.getMonth() + 1}/${today.getDate()}`;
+            const tomorrowStr = `${tomorrow.getMonth() + 1}/${tomorrow.getDate()}`;
+            const info = d.county ? `
+                <p class="forecast-time">預報時間：${todayStr} 00 時至 ${tomorrowStr} 00 時</p>
+                <h3>${d.county} ${d.district}沿海</h3>
+                <p><strong>風速 (公尺/秒)：</strong>${d.wind_speed_range || '無資料'}</p>
+                <p><strong>風級：</strong>${d.beaufort_scale_range || '無資料'}</p>
+                <p><strong>風向：</strong>${d.wind_direction || '無資料'} ${getArrow(d.wind_direction, false)}</p>
+                <p><strong>浪高 (公尺)：</strong>${d.wave_height_range || '無資料'}</p>
+                <p><strong>浪向：</strong>${d.wave_direction || '無資料'} ${getArrow(d.wave_direction, false)}</p>
+                <p><strong>浪週期 (秒)：</strong>${d.wave_period_range || '無資料'}</p>
+                <p><strong>異常波浪 (瘋狗浪) 風險：</strong>${d.max_risk_label || '無資料'}</p>
+                <p><strong>流速 (公尺/秒)：</strong>${d.ocean_current_speed_range || '無資料'}</p>
+                <p><strong>流向：</strong>${d.ocean_current_direction || '無資料'} ${getArrow(d.ocean_current_direction, true)}</p>
+            ` : `<p>請點選地圖上的行政區以查看詳細預報資料。</p>`;
+            document.getElementById('forecast-info').innerHTML = info;
+        }
+
+        // 獲取用戶位置並定位
+        function getUserLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(position => {
+                    const userLat = position.coords.latitude;
+                    const userLon = position.coords.longitude;
+                    let closest = null;
+                    let minDist = Infinity;
+                    waveData.forEach(d => {
+                        if (d.latitude && d.longitude) {
+                            const dist = Math.sqrt(
+                                Math.pow(d.latitude - userLat, 2) + Math.pow(d.longitude - userLon, 2)
+                            );
+                            if (dist < minDist) {
+                                minDist = dist;
+                                closest = d;
+                            }
+                        }
+                    });
+                    if (closest) {
+                        map.setView([userLat, userLon], 12);
+                        displayForecastInfo(closest);
+                    } else {
+                        map.setView([25.14667, 121.78639], 12); // 基隆港
+                        const defaultData = waveData.find(d => d.county === '基隆市' && d.district === '中正區') || {};
+                        displayForecastInfo(defaultData);
+                    }
+                }, () => {
+                    map.setView([25.14667, 121.78639], 12); // 基隆港
+                    const defaultData = waveData.find(d => d.county === '基隆市' && d.district === '中正區') || {};
+                    displayForecastInfo(defaultData);
+                });
+            } else {
+                map.setView([25.14667, 121.78639], 12); // 基隆港
+                const defaultData = waveData.find(d => d.county === '基隆市' && d.district === '中正區') || {};
+                displayForecastInfo(defaultData);
+            }
+        }
+
+        // 複製連結功能
         function copyToClipboard() {
             const url = 'https://keelungcwa.github.io/CWA_Waverisk/';
             navigator.clipboard.writeText(url).then(() => {
@@ -155,6 +489,12 @@
                 alert('複製連結失敗，請手動複製。');
             });
         }
+
+        // 頁面加載時設置預報時間並確保地圖渲染
+        window.onload = function() {
+            setForecastTime();
+            setTimeout(() => map.invalidateSize(), 100);
+        };
     </script>
 </body>
 </html>
