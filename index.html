@@ -42,12 +42,21 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+        h2 {
+            color: #757575;
+            font-size: 20px;
+            margin: 15px 0 10px;
+            text-align: center;
+        }
         p {
             font-size: 15px;
             color: #424242;
             line-height: 1.4;
             margin: 5px 0;
             text-align: left;
+        }
+        .wave-height {
+            font-size: 18px;
         }
         .upper-section {
             display: flex;
@@ -83,25 +92,48 @@
             color: #757575;
             margin-bottom: 10px;
         }
+        .lower-section {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .live-video {
+            flex: 1;
+            text-align: center;
+        }
+        #video-container {
+            border: 1px solid #e0e0e0; /* 僅框住影像或文字 */
+            border-radius: 8px;
+        }
+        .live-video iframe {
+            width: 100%;
+            height: 220px;
+            border-radius: 8px;
+            border: none;
+        }
+        #video-container p {
+            text-align: center; /* 無即時海況影像文字置中 */
+        }
+        .forecast-image {
+            flex: 1;
+            text-align: center;
+        }
+        .forecast-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .forecast-image img:hover {
+            transform: scale(1.02);
+        }
         .footer-link p {
             font-size: 13px;
             color: #757575;
             text-align: center;
             margin: 5px 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            border: 2px solid #e0e0e0;
-            margin: 15px 0;
-            transition: transform 0.3s ease;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        img:hover {
-            transform: scale(1.02);
         }
         .share-buttons {
             display: flex;
@@ -169,27 +201,41 @@
             border-radius: 4px;
             box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
             cursor: pointer;
-            padding: 6px;
+            padding: 8px;
+            text-align: center;
         }
         .leaflet-control-locate i {
             font-size: 16px;
             color: #333;
         }
+        .leaflet-control-locate:hover {
+            background: #f4f4f4;
+        }
         @media (max-width: 600px) {
             body {
-                font-size: 14px; /* 減小 1 級 */
+                font-size: 14px;
             }
             .container {
                 margin: 5px;
                 padding: 15px;
             }
             h1 {
-                font-size: 20px; /* 從 21px 減小到 20px */
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 18px;
             }
             p {
-                font-size: 15px; /* 從 16px 減小到 15px */
+                font-size: 15px;
+            }
+            .wave-height {
+                font-size: 18px;
             }
             .upper-section {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .lower-section {
                 flex-direction: column;
                 gap: 10px;
             }
@@ -202,27 +248,40 @@
             }
             .forecast-info {
                 max-height: none;
-                font-size: 16px; /* 從 17px 減小到 16px */
+                font-size: 16px;
                 width: 100%;
             }
             .forecast-info h3 {
-                font-size: 18px; /* 從 19px 減小到 18px */
+                font-size: 18px;
             }
             .forecast-time {
-                font-size: 13px; /* 從 14px 減小到 13px */
+                font-size: 13px;
+            }
+            .live-video iframe {
+                height: 140px;
+            }
+            #video-container {
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+            }
+            #video-container p {
+                text-align: center;
+            }
+            .forecast-image img {
+                max-width: 100%;
             }
             .footer-link p {
-                font-size: 13px; /* 從 14px 減小到 13px */
+                font-size: 13px;
             }
             .share-button {
                 padding: 8px 14px;
-                font-size: 13px; /* 從 14px 減小到 13px */
+                font-size: 13px;
             }
             .footer-link a {
-                font-size: 13px; /* 從 14px 減小到 13px */
+                font-size: 13px;
             }
             .legend {
-                font-size: 13px; /* 從 14px 減小到 13px */
+                font-size: 13px;
             }
         }
     </style>
@@ -230,6 +289,7 @@
 <body>
     <div class="container">
         <h1>🌊基隆北海岸沿海與異常波浪(瘋狗浪)預報</h1>
+        <h2>風險等級地圖與預報資訊</h2>
         <div class="upper-section">
             <div id="map"></div>
             <div class="forecast-info" id="forecast-info">
@@ -237,7 +297,20 @@
                 <p>請點選地圖上的行政區以查看詳細預報資料。</p>
             </div>
         </div>
-        <img src="images/CWA_waverisk.png" alt="中央氣象署基隆北海岸異常波浪預報圖表" width="800" height="450" onerror="this.src='images/fallback.png'; this.alt='圖表載入失敗';">
+        <div class="lower-section">
+            <div class="live-video">
+                <h2>即時海況影像</h2>
+                <div id="video-container">
+                    <p>請點選地圖上的行政區以查看即時海況影像。</p>
+                </div>
+            </div>
+            <div class="forecast-image">
+                <h2>預報圖卡</h2>
+                <a href="https://keelungcwa.github.io/CWA_Waverisk/images/CWA_waverisk.png" target="_blank">
+                    <img src="https://keelungcwa.github.io/CWA_Waverisk/images/CWA_waverisk.png" alt="中央氣象署基隆北海岸異常波浪預報圖表" width="800" height="450" onerror="this.src='images/fallback.png'; this.alt='圖表載入失敗';">
+                </a>
+            </div>
+        </div>
         <div class="share-buttons">
             <a href="https://social-plugins.line.me/lineit/share?url=https://keelungcwa.github.io/CWA_Waverisk/&text=【基隆北海岸瘋狗浪預報】請參考最新沿海波浪資訊！" class="share-button line-share" target="_blank" aria-label="分享到 LINE">
                 <i class="fab fa-line"></i> 分享到 LINE
@@ -250,10 +323,10 @@
             </button>
         </div>
         <div class="footer-link">
-            <p>資料來源：中央氣象署</p>
-            <p>預報更新時間：每天早上 6 時</p>
+            <p>資料來源：中央氣象署 | 預報更新時間：每天早上 6 時 |</p>
             <p>說明：本圖表呈現預報數據之最小~最大值，風險值取當日最大，方向取出現最多次數</p>
-            <a href="https://keelungcwa.github.io/keelungcwa/" target="_blank">基隆氣象站 山海好厝邊</a>
+            <p>地址：200基隆市仁愛區港西街6號6樓 (海港大樓) | 電話：(02)2422-4240 | 電子郵件：keelung@cwa.gov.tw</p>
+            <p>中央氣象署基隆氣象站 製作 | <a href="https://keelungcwa.github.io/keelungcwa/" target="_blank">基隆氣象站 山海好厝邊</a></p>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
@@ -262,21 +335,26 @@
     <script>
         // 動態設置預報時間
         function setForecastTime() {
+            const forecastTimeElement = document.getElementById('forecast-time');
+            if (!forecastTimeElement) {
+                console.error('找不到 forecast-time 元素');
+                return;
+            }
             const today = new Date();
             const tomorrow = new Date(today);
             tomorrow.setDate(today.getDate() + 1);
             const todayStr = `${today.getMonth() + 1}/${today.getDate()}`;
             const tomorrowStr = `${tomorrow.getMonth() + 1}/${tomorrow.getDate()}`;
-            document.getElementById('forecast-time').innerText = `預報時間：${todayStr} 00 時至 ${tomorrowStr} 00 時`;
+            forecastTimeElement.innerText = `預報時間：${todayStr} 00 時至 ${tomorrowStr} 00 時`;
         }
 
         // 初始化地圖
         const map = L.map('map', {
             zoomControl: false,
-            minZoom: 8, // 限制最小縮放級別，防止縮放到全世界
-            maxBounds: [[21.8, 118.0], [26.5, 123.0]], // 限制地圖範圍為台灣周邊
-            maxBoundsViscosity: 1.0 // 防止拖動超出範圍
-        }).setView([25.14667, 121.78639], 10); // 預設以基隆港為中心
+            minZoom: 8,
+            maxBounds: [[21.8, 118.0], [26.5, 123.0]],
+            maxBoundsViscosity: 1.0
+        }).setView([25.14667, 121.78639], 10);
         L.control.zoom({ position: 'topright' }).addTo(map);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -321,6 +399,25 @@
         // 北台灣邊界範圍
         const northTaiwanBounds = [[24.7, 121.0], [25.5, 122.0]];
 
+        // YouTube 直播連結
+        const videoLinks = {
+            "基隆市_中正區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/I5O36tXS25w?si=U-zmDUjnMVSHeM1R&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "基隆市_中山區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/LInNQYAbAwQ?si=g27c-3x_w4YwGnF5&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "新北市_貢寮區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/u9ZkchQyX6s?si=1DJ8HzHAP00Sfb4P&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "新北市_瑞芳區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/XSD5ptYisw8?si=jmIbIvDvPimMyHS8&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "新北市_萬里區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/Shp8KdJK9-Y?si=4XaB7HKaVmly6Cyo&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "新北市_金山區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/3lY2OeFb8pQ?si=I9LHRx-nvw2RVUfT&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "新北市_石門區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/u-iZ_3fbuzQ?si=p0lialQnVMg-tkCQ&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "新北市_三芝區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/0vcxPcP9MA0?si=vgTmPfewOj_CaVvY&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "新北市_淡水區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/xwAWSh35uuw?si=v58XtAOQlYgin0Nw&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "新北市_八里區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/xwAWSh35uuw?si=v58XtAOQlYgin0Nw&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "新北市_林口區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/wWEnxWA7nnY?si=oQktW1_78zZVuX-O&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "桃園市_觀音區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/tD_a03trUvE?si=XFeOWqjr9MgspNKj&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "桃園市_新屋區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/tD_a03trUvE?si=XFeOWqjr9MgspNKj&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "桃園市_大園區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/wWEnxWA7nnY?si=oQktW1_78zZVuX-O&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+            "桃園市_蘆竹區": '<iframe width="100%" height="220" src="https://www.youtube.com/embed/wWEnxWA7nnY?si=oQktW1_78zZVuX-O&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+        };
+
         // 載入預報資料和TopoJSON
         let waveData = [];
         let topoData = null;
@@ -355,16 +452,16 @@
 
         // 方向到箭頭的映射
         function getArrow(direction, isFlow) {
-            const normalized = direction.replace(/偏/g, '').replace(/風/g, '');
+            const normalized = direction ? direction.replace(/偏/g, '').replace(/風/g, '') : '';
             const ARROW_MAPPING = {
-                '北': isFlow ? '↑' : '↓',  // 風向浪向來向：北->↓, 海流去向：北->↑
-                '南': isFlow ? '↓' : '↑',  // 風向浪向來向：南->↑, 海流去向：南->↓
-                '東': isFlow ? '→' : '←',  // 風向浪向來向：東->←, 海流去向：東->→
-                '西': isFlow ? '←' : '→',  // 風向浪向來向：西->→, 海流去向：西->←
-                '東北': isFlow ? '↗' : '↙',  // 風向浪向來向：東北->↙, 海流去向：東北->↗
-                '西北': isFlow ? '↖' : '↘',  // 風向浪向來向：西北->↘, 海流去向：西北->↖
-                '東南': isFlow ? '↘' : '↖',  // 風向浪向來向：東南->↖, 海流去向：東南->↘
-                '西南': isFlow ? '↙' : '↗'   // 風向浪向來向：西南->↗, 海流去向：西南->↙
+                '北': isFlow ? '↑' : '↓',
+                '南': isFlow ? '↓' : '↑',
+                '東': isFlow ? '→' : '←',
+                '西': isFlow ? '←' : '→',
+                '東北': isFlow ? '↗' : '↙',
+                '西北': isFlow ? '↖' : '↘',
+                '東南': isFlow ? '↘' : '↖',
+                '西南': isFlow ? '↙' : '↗'
             };
             return ARROW_MAPPING[normalized] || '';
         }
@@ -409,7 +506,6 @@
             try {
                 const topoLayer = topojson.feature(topoData, topoData.objects.layer1);
                 layer.addData(topoLayer).addTo(map);
-                // 聚焦北台灣
                 map.fitBounds(northTaiwanBounds);
                 setTimeout(() => map.invalidateSize(), 100);
             } catch (err) {
@@ -417,7 +513,7 @@
             }
         }
 
-        // 顯示預報資訊
+        // 顯示預報資訊和即時海況影像
         function displayForecastInfo(d) {
             const today = new Date();
             const tomorrow = new Date(today);
@@ -425,19 +521,33 @@
             const todayStr = `${today.getMonth() + 1}/${today.getDate()}`;
             const tomorrowStr = `${tomorrow.getMonth() + 1}/${tomorrow.getDate()}`;
             const info = d.county ? `
-                <p class="forecast-time">預報時間：${todayStr} 00 時至 ${tomorrowStr} 00 時</p>
+                <p class="forecast-time" id="forecast-time">預報時間：${todayStr} 00 時至 ${tomorrowStr} 00 時</p>
                 <h3>${d.county} ${d.district}沿海</h3>
-                <p><strong>風速 (公尺/秒)：</strong>${d.wind_speed_range || '無資料'}</p>
-                <p><strong>風級：</strong>${d.beaufort_scale_range || '無資料'}</p>
-                <p><strong>風向：</strong>${d.wind_direction || '無資料'} ${getArrow(d.wind_direction, false)}</p>
-                <p><strong>浪高 (公尺)：</strong>${d.wave_height_range || '無資料'}</p>
+                <p class="wave-height"><strong>浪高 (公尺)：</strong>${d.wave_height_range || '無資料'}</p>
                 <p><strong>浪向：</strong>${d.wave_direction || '無資料'} ${getArrow(d.wave_direction, false)}</p>
                 <p><strong>浪週期 (秒)：</strong>${d.wave_period_range || '無資料'}</p>
                 <p><strong>異常波浪 (瘋狗浪) 風險：</strong>${d.max_risk_label || '無資料'}</p>
+                <p><strong>風速 (公尺/秒)：</strong>${d.wind_speed_range || '無資料'}</p>
+                <p><strong>風級：</strong>${d.beaufort_scale_range || '無資料'}</p>
+                <p><strong>風向：</strong>${d.wind_direction || '無資料'} ${getArrow(d.wind_direction, false)}</p>
                 <p><strong>流速 (公尺/秒)：</strong>${d.ocean_current_speed_range || '無資料'}</p>
                 <p><strong>流向：</strong>${d.ocean_current_direction || '無資料'} ${getArrow(d.ocean_current_direction, true)}</p>
             ` : `<p>請點選地圖上的行政區以查看詳細預報資料。</p>`;
-            document.getElementById('forecast-info').innerHTML = info;
+            const forecastInfoElement = document.getElementById('forecast-info');
+            if (forecastInfoElement) {
+                forecastInfoElement.innerHTML = info;
+            } else {
+                console.error('找不到 forecast-info 元素');
+            }
+
+            // 更新即時海況影像
+            const videoContainer = document.getElementById('video-container');
+            if (videoContainer) {
+                const key = d.county && d.district ? `${d.county}_${d.district}` : '';
+                videoContainer.innerHTML = videoLinks[key] || '<p>無即時海況影像</p>';
+            } else {
+                console.error('找不到 video-container 元素');
+            }
         }
 
         // 獲取用戶位置並定位
@@ -463,17 +573,17 @@
                         map.setView([userLat, userLon], 12);
                         displayForecastInfo(closest);
                     } else {
-                        map.setView([25.14667, 121.78639], 12); // 基隆港
+                        map.setView([25.14667, 121.78639], 12);
                         const defaultData = waveData.find(d => d.county === '基隆市' && d.district === '中正區') || {};
                         displayForecastInfo(defaultData);
                     }
                 }, () => {
-                    map.setView([25.14667, 121.78639], 12); // 基隆港
+                    map.setView([25.14667, 121.78639], 12);
                     const defaultData = waveData.find(d => d.county === '基隆市' && d.district === '中正區') || {};
                     displayForecastInfo(defaultData);
                 });
             } else {
-                map.setView([25.14667, 121.78639], 12); // 基隆港
+                map.setView([25.14667, 121.78639], 12);
                 const defaultData = waveData.find(d => d.county === '基隆市' && d.district === '中正區') || {};
                 displayForecastInfo(defaultData);
             }
