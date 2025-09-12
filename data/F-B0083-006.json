@@ -1,16 +1,16 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "identifier": "373d0e1e-1d2b-4cfa-9fd4-5f14f45c9dc3",
+  "identifier": "a439ec3f-6286-4bf8-920b-1f735532e17f",
   "Email": "od@cwa.gov.tw",
-  "sent": "2025-09-12T03:07:46+08:00",
+  "sent": "2025-09-13T03:28:10+08:00",
   "status": "Actual",
   "msgType": "Issue",
   "dataid": "B0083-006",
   "scope": "Public",
   "dataset": {
    "Description": "海岸異常浪發生風險",
-   "DateTime": "2025-09-12T14:00:00+08:00",
+   "DateTime": "2025-09-13T14:00:00+08:00",
    "Location": [
     {
      "LocationName": "新北龍洞",
