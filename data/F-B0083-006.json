@@ -1,20 +1,20 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "identifier": "8b0012af-7ee7-4bb7-8f52-b3790f211992",
+  "identifier": "d6a6a7f0-5719-47f7-95c9-40bc46c62fe8",
   "Email": "od@cwa.gov.tw",
-  "sent": "2025-09-18T03:11:03+08:00",
+  "sent": "2025-09-19T03:31:57+08:00",
   "status": "Actual",
   "msgType": "Issue",
   "dataid": "B0083-006",
   "scope": "Public",
   "dataset": {
    "Description": "海岸異常浪發生風險",
-   "DateTime": "2025-09-18T14:00:00+08:00",
+   "DateTime": "2025-09-19T14:00:00+08:00",
    "Location": [
     {
      "LocationName": "新北龍洞",
-     "RiskValue": "1"
+     "RiskValue": "0"
     },
     {
      "LocationName": "基隆碧砂",
@@ -22,7 +22,7 @@
     },
     {
      "LocationName": "新北野柳",
-     "RiskValue": "2"
+     "RiskValue": "1"
     },
     {
      "LocationName": "宜蘭內埤",
@@ -62,7 +62,7 @@
     },
     {
      "LocationName": "屏東興海",
-     "RiskValue": "2"
+     "RiskValue": "0"
     },
     {
      "LocationName": "苗栗外埔港",
