@@ -1,20 +1,20 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "identifier": "143c48cf-ca6e-4362-b404-2a79b48e7d24",
+  "identifier": "ac0dadf2-45e5-455b-9f2b-028e331ea246",
   "Email": "od@cwa.gov.tw",
-  "sent": "2025-09-30T03:40:07+08:00",
+  "sent": "2025-10-01T03:20:26+08:00",
   "status": "Actual",
   "msgType": "Issue",
   "dataid": "B0083-007",
   "scope": "Public",
   "dataset": {
    "Description": "海岸異常浪發生風險",
-   "DateTime": "2025-09-30T20:00:00+08:00",
+   "DateTime": "2025-10-01T20:00:00+08:00",
    "Location": [
     {
      "LocationName": "新北龍洞",
-     "RiskValue": "1"
+     "RiskValue": "0"
     },
     {
      "LocationName": "基隆碧砂",
