@@ -1,9 +1,9 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "Identifier": "24be2806-8248-48e2-a5ab-525b2ab89097",
+  "Identifier": "236c459c-a637-438a-a72b-9e5f14693265",
   "Sender": "weather@cwa.gov.tw",
-  "Sent": "2025-10-20T04:45:47+08:00",
+  "Sent": "2025-10-20T05:44:10+08:00",
   "Status": "Actual",
   "Scope": "Public",
   "MsgType": "Issue",
@@ -80,7 +80,7 @@
      "StartTime": "2025-10-20T06:00:00+08:00",
      "EndTime": "2025-10-23T06:00:00+08:00"
     },
-    "Update": "2025-10-20T04:45:47+08:00"
+    "Update": "2025-10-20T05:44:10+08:00"
    },
    "Locations": {
     "LocationsName": [
@@ -194772,25 +194772,25 @@
          {
           "DataTime": "2025-10-20T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "1.7"
+           "WaveHeight": "3.7"
           }
          },
          {
           "DataTime": "2025-10-20T09:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "1.9"
+           "WaveHeight": "3.8"
           }
          },
          {
           "DataTime": "2025-10-20T12:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "1.9"
+           "WaveHeight": "4.0"
           }
          },
          {
           "DataTime": "2025-10-20T15:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "2.0"
+           "WaveHeight": "4.2"
           }
          },
          {
@@ -194802,7 +194802,7 @@
          {
           "DataTime": "2025-10-20T21:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "2.1"
+           "WaveHeight": "3.4"
           }
          },
          {
@@ -194814,19 +194814,19 @@
          {
           "DataTime": "2025-10-21T03:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "2.1"
+           "WaveHeight": "4.7"
           }
          },
          {
           "DataTime": "2025-10-21T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "1.9"
+           "WaveHeight": "3.2"
           }
          },
          {
           "DataTime": "2025-10-21T09:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "1.9"
+           "WaveHeight": "3.9"
           }
          },
          {
@@ -196811,37 +196811,37 @@
          {
           "DataTime": "2025-10-20T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "2.8"
+           "WaveHeight": "3.8"
           }
          },
          {
           "DataTime": "2025-10-20T09:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "2.9"
+           "WaveHeight": "3.9"
           }
          },
          {
           "DataTime": "2025-10-20T12:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.1"
+           "WaveHeight": "4.3"
           }
          },
          {
           "DataTime": "2025-10-20T15:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.3"
+           "WaveHeight": "4.2"
           }
          },
          {
           "DataTime": "2025-10-20T18:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.3"
+           "WaveHeight": "4.4"
           }
          },
          {
           "DataTime": "2025-10-20T21:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.5"
+           "WaveHeight": "3.6"
           }
          },
          {
@@ -196853,19 +196853,19 @@
          {
           "DataTime": "2025-10-21T03:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.4"
+           "WaveHeight": "4.4"
           }
          },
          {
           "DataTime": "2025-10-21T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.3"
+           "WaveHeight": "3.5"
           }
          },
          {
           "DataTime": "2025-10-21T09:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.1"
+           "WaveHeight": "3.9"
           }
          },
          {
@@ -198850,61 +198850,61 @@
          {
           "DataTime": "2025-10-20T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "2.7"
+           "WaveHeight": "4.0"
           }
          },
          {
           "DataTime": "2025-10-20T09:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "2.8"
+           "WaveHeight": "4.1"
           }
          },
          {
           "DataTime": "2025-10-20T12:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "2.9"
+           "WaveHeight": "4.3"
           }
          },
          {
           "DataTime": "2025-10-20T15:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.2"
+           "WaveHeight": "4.1"
           }
          },
          {
           "DataTime": "2025-10-20T18:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.2"
+           "WaveHeight": "3.4"
           }
          },
          {
           "DataTime": "2025-10-20T21:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.2"
+           "WaveHeight": "4.0"
           }
          },
          {
           "DataTime": "2025-10-21T00:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.2"
+           "WaveHeight": "3.6"
           }
          },
          {
           "DataTime": "2025-10-21T03:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.2"
+           "WaveHeight": "4.5"
           }
          },
          {
           "DataTime": "2025-10-21T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.0"
+           "WaveHeight": "4.1"
           }
          },
          {
           "DataTime": "2025-10-21T09:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.0"
+           "WaveHeight": "3.7"
           }
          },
          {
@@ -200889,61 +200889,61 @@
          {
           "DataTime": "2025-10-20T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.6"
+           "WaveHeight": "4.1"
           }
          },
          {
           "DataTime": "2025-10-20T09:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.7"
+           "WaveHeight": "4.2"
           }
          },
          {
           "DataTime": "2025-10-20T12:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.9"
+           "WaveHeight": "4.3"
           }
          },
          {
           "DataTime": "2025-10-20T15:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.1"
+           "WaveHeight": "4.6"
           }
          },
          {
           "DataTime": "2025-10-20T18:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.2"
+           "WaveHeight": "4.7"
           }
          },
          {
           "DataTime": "2025-10-20T21:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.3"
+           "WaveHeight": "4.4"
           }
          },
          {
           "DataTime": "2025-10-21T00:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.3"
+           "WaveHeight": "4.6"
           }
          },
          {
           "DataTime": "2025-10-21T03:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.4"
+           "WaveHeight": "4.7"
           }
          },
          {
           "DataTime": "2025-10-21T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.3"
+           "WaveHeight": "4.5"
           }
          },
          {
           "DataTime": "2025-10-21T09:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.2"
+           "WaveHeight": "4.3"
           }
          },
          {
@@ -202928,55 +202928,55 @@
          {
           "DataTime": "2025-10-20T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.4"
+           "WaveHeight": "4.0"
           }
          },
          {
           "DataTime": "2025-10-20T09:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.5"
+           "WaveHeight": "3.9"
           }
          },
          {
           "DataTime": "2025-10-20T12:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.7"
+           "WaveHeight": "4.3"
           }
          },
          {
           "DataTime": "2025-10-20T15:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.8"
+           "WaveHeight": "4.2"
           }
          },
          {
           "DataTime": "2025-10-20T18:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.8"
+           "WaveHeight": "4.4"
           }
          },
          {
           "DataTime": "2025-10-20T21:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.1"
+           "WaveHeight": "4.2"
           }
          },
          {
           "DataTime": "2025-10-21T00:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.1"
+           "WaveHeight": "4.2"
           }
          },
          {
           "DataTime": "2025-10-21T03:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.1"
+           "WaveHeight": "4.4"
           }
          },
          {
           "DataTime": "2025-10-21T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.0"
+           "WaveHeight": "3.9"
           }
          },
          {
@@ -204967,7 +204967,7 @@
          {
           "DataTime": "2025-10-20T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "2.8"
+           "WaveHeight": "3.8"
           }
          },
          {
@@ -204985,7 +204985,7 @@
          {
           "DataTime": "2025-10-20T15:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.0"
+           "WaveHeight": "3.9"
           }
          },
          {
@@ -207006,19 +207006,19 @@
          {
           "DataTime": "2025-10-20T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.6"
+           "WaveHeight": "4.1"
           }
          },
          {
           "DataTime": "2025-10-20T09:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.7"
+           "WaveHeight": "4.2"
           }
          },
          {
           "DataTime": "2025-10-20T12:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.0"
+           "WaveHeight": "3.8"
           }
          },
          {
@@ -207030,19 +207030,19 @@
          {
           "DataTime": "2025-10-20T18:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.2"
+           "WaveHeight": "4.7"
           }
          },
          {
           "DataTime": "2025-10-20T21:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.3"
+           "WaveHeight": "4.8"
           }
          },
          {
           "DataTime": "2025-10-21T00:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.3"
+           "WaveHeight": "4.8"
           }
          },
          {
@@ -207054,7 +207054,7 @@
          {
           "DataTime": "2025-10-21T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.2"
+           "WaveHeight": "4.4"
           }
          },
          {
@@ -209045,13 +209045,13 @@
          {
           "DataTime": "2025-10-20T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.3"
+           "WaveHeight": "4.4"
           }
          },
          {
           "DataTime": "2025-10-20T09:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.4"
+           "WaveHeight": "4.6"
           }
          },
          {
@@ -209069,19 +209069,19 @@
          {
           "DataTime": "2025-10-20T18:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.9"
+           "WaveHeight": "4.8"
           }
          },
          {
           "DataTime": "2025-10-20T21:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.9"
+           "WaveHeight": "4.9"
           }
          },
          {
           "DataTime": "2025-10-21T00:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "4.0"
+           "WaveHeight": "4.9"
           }
          },
          {
@@ -209093,7 +209093,7 @@
          {
           "DataTime": "2025-10-21T06:00:00+08:00",
           "ElementValue": {
-           "WaveHeight": "3.8"
+           "WaveHeight": "4.7"
           }
          },
          {
