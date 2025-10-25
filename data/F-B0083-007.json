@@ -1,16 +1,16 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "identifier": "56da6458-f9c7-483d-bbdc-39a65ea5771f",
+  "identifier": "42c9ad01-a909-40ab-a4da-b9175d6593b5",
   "Email": "od@cwa.gov.tw",
-  "sent": "2025-10-25T03:40:49+08:00",
+  "sent": "2025-10-26T03:22:02+08:00",
   "status": "Actual",
   "msgType": "Issue",
   "dataid": "B0083-007",
   "scope": "Public",
   "dataset": {
    "Description": "海岸異常浪發生風險",
-   "DateTime": "2025-10-25T20:00:00+08:00",
+   "DateTime": "2025-10-26T20:00:00+08:00",
    "Location": [
     {
      "LocationName": "新北龍洞",
@@ -34,7 +34,7 @@
     },
     {
      "LocationName": "桃園永安",
-     "RiskValue": "1"
+     "RiskValue": "0"
     },
     {
      "LocationName": "台南安平",
