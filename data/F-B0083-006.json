@@ -1,16 +1,16 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "identifier": "dc11524e-b002-4ca0-9ef7-f42f0056d53d",
+  "identifier": "e3e21a1e-5e04-4a4e-9dd4-599f541d96af",
   "Email": "od@cwa.gov.tw",
-  "sent": "2025-11-28T03:39:39+08:00",
+  "sent": "2025-11-29T03:19:16+08:00",
   "status": "Actual",
   "msgType": "Issue",
   "dataid": "B0083-006",
   "scope": "Public",
   "dataset": {
    "Description": "海岸異常浪發生風險",
-   "DateTime": "2025-11-28T14:00:00+08:00",
+   "DateTime": "2025-11-29T14:00:00+08:00",
    "Location": [
     {
      "LocationName": "新北龍洞",
@@ -18,11 +18,11 @@
     },
     {
      "LocationName": "基隆碧砂",
-     "RiskValue": "1"
+     "RiskValue": "0"
     },
     {
      "LocationName": "新北野柳",
-     "RiskValue": "2"
+     "RiskValue": "0"
     },
     {
      "LocationName": "宜蘭內埤",
@@ -42,11 +42,11 @@
     },
     {
      "LocationName": "花蓮石梯坪",
-     "RiskValue": "2"
+     "RiskValue": "1"
     },
     {
      "LocationName": "台東富岡",
-     "RiskValue": "2"
+     "RiskValue": "1"
     },
     {
      "LocationName": "台中台中港",
@@ -54,7 +54,7 @@
     },
     {
      "LocationName": "雲林萡子寮",
-     "RiskValue": "1"
+     "RiskValue": "0"
     },
     {
      "LocationName": "嘉義布袋",
