@@ -1,16 +1,16 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "identifier": "bf7841a9-3287-429e-b77a-913d6fda25b9",
+  "identifier": "014e7d98-cce4-46e1-9de8-2bcfe24bc812",
   "Email": "od@cwa.gov.tw",
-  "sent": "2025-12-11T03:17:40+08:00",
+  "sent": "2025-12-12T03:37:21+08:00",
   "status": "Actual",
   "msgType": "Issue",
   "dataid": "B0083-006",
   "scope": "Public",
   "dataset": {
    "Description": "海岸異常浪發生風險",
-   "DateTime": "2025-12-11T14:00:00+08:00",
+   "DateTime": "2025-12-12T14:00:00+08:00",
    "Location": [
     {
      "LocationName": "新北龍洞",
@@ -30,7 +30,7 @@
     },
     {
      "LocationName": "高雄西子灣",
-     "RiskValue": "0"
+     "RiskValue": "1"
     },
     {
      "LocationName": "桃園永安",
