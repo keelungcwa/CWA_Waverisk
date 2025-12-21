@@ -1,16 +1,16 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "identifier": "410984d4-3841-477b-a82b-86057809013e",
+  "identifier": "022cf1f0-8a63-4a47-be25-236b6581d36f",
   "Email": "od@cwa.gov.tw",
-  "sent": "2025-12-21T03:26:37+08:00",
+  "sent": "2025-12-22T03:06:06+08:00",
   "status": "Actual",
   "msgType": "Issue",
   "dataid": "B0083-006",
   "scope": "Public",
   "dataset": {
    "Description": "海岸異常浪發生風險",
-   "DateTime": "2025-12-21T14:00:00+08:00",
+   "DateTime": "2025-12-22T14:00:00+08:00",
    "Location": [
     {
      "LocationName": "新北龍洞",
@@ -30,15 +30,15 @@
     },
     {
      "LocationName": "高雄西子灣",
-     "RiskValue": "2"
+     "RiskValue": "0"
     },
     {
      "LocationName": "桃園永安",
-     "RiskValue": "2"
+     "RiskValue": "0"
     },
     {
      "LocationName": "台南安平",
-     "RiskValue": "2"
+     "RiskValue": "0"
     },
     {
      "LocationName": "花蓮石梯坪",
@@ -50,7 +50,7 @@
     },
     {
      "LocationName": "台中台中港",
-     "RiskValue": "2"
+     "RiskValue": "1"
     },
     {
      "LocationName": "雲林萡子寮",
@@ -58,7 +58,7 @@
     },
     {
      "LocationName": "嘉義布袋",
-     "RiskValue": "2"
+     "RiskValue": "1"
     },
     {
      "LocationName": "屏東興海",
