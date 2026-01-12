@@ -1,16 +1,16 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "identifier": "735f0aa2-a2cc-412c-bd9b-8590deacddcd",
+  "identifier": "6c81fd17-4036-4bec-b255-9cf3b4dbbd17",
   "Email": "od@cwa.gov.tw",
-  "sent": "2026-01-12T03:27:08+08:00",
+  "sent": "2026-01-13T03:05:35+08:00",
   "status": "Actual",
   "msgType": "Issue",
   "dataid": "B0083-007",
   "scope": "Public",
   "dataset": {
    "Description": "海岸異常浪發生風險",
-   "DateTime": "2026-01-12T20:00:00+08:00",
+   "DateTime": "2026-01-13T20:00:00+08:00",
    "Location": [
     {
      "LocationName": "新北龍洞",
@@ -62,7 +62,7 @@
     },
     {
      "LocationName": "屏東興海",
-     "RiskValue": "0"
+     "RiskValue": "2"
     },
     {
      "LocationName": "苗栗外埔港",
