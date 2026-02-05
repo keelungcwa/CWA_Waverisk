@@ -1,9 +1,9 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "Identifier": "884c6dbb-908c-4164-b71d-8f56d7fbb08a",
+  "Identifier": "040180fc-0dc6-45f4-8649-96503bf3bb38",
   "Sender": "weather@cwa.gov.tw",
-  "Sent": "2026-02-06T04:48:44+08:00",
+  "Sent": "2026-02-06T06:15:19+08:00",
   "Status": "Actual",
   "Scope": "Public",
   "MsgType": "Issue",
@@ -80,7 +80,7 @@
      "StartTime": "2026-02-06T06:00:00+08:00",
      "EndTime": "2026-02-09T06:00:00+08:00"
     },
-    "Update": "2026-02-06T04:48:44+08:00"
+    "Update": "2026-02-06T06:15:19+08:00"
    },
    "Locations": {
     "LocationsName": [
@@ -59969,8 +59969,8 @@
          {
           "DataTime": "2026-02-06T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -62008,8 +62008,8 @@
          {
           "DataTime": "2026-02-06T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
