@@ -1,9 +1,9 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "Identifier": "6851c21b-01db-4f04-9c01-a2019a88ef41",
+  "Identifier": "ea0577b1-3f9c-4f18-a56b-ad4f3be8aedd",
   "Sender": "weather@cwa.gov.tw",
-  "Sent": "2026-03-04T04:50:18+08:00",
+  "Sent": "2026-03-04T06:14:57+08:00",
   "Status": "Actual",
   "Scope": "Public",
   "MsgType": "Issue",
@@ -80,7 +80,7 @@
      "StartTime": "2026-03-04T06:00:00+08:00",
      "EndTime": "2026-03-07T06:00:00+08:00"
     },
-    "Update": "2026-03-04T04:50:18+08:00"
+    "Update": "2026-03-04T06:14:57+08:00"
    },
    "Locations": {
     "LocationsName": [
@@ -76281,8 +76281,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -78320,8 +78320,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -80359,8 +80359,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -82398,8 +82398,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -84430,15 +84430,15 @@
          {
           "DataTime": "2026-03-04T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -86469,15 +86469,15 @@
          {
           "DataTime": "2026-03-04T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -88508,15 +88508,15 @@
          {
           "DataTime": "2026-03-04T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -90547,15 +90547,15 @@
          {
           "DataTime": "2026-03-04T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -92586,15 +92586,15 @@
          {
           "DataTime": "2026-03-04T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -94625,15 +94625,15 @@
          {
           "DataTime": "2026-03-04T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -96664,15 +96664,15 @@
          {
           "DataTime": "2026-03-04T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -98703,15 +98703,15 @@
          {
           "DataTime": "2026-03-04T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -100742,15 +100742,15 @@
          {
           "DataTime": "2026-03-04T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -102788,8 +102788,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -104827,8 +104827,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -106866,8 +106866,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -108905,8 +108905,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -110944,8 +110944,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -112983,8 +112983,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -115022,8 +115022,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -117061,8 +117061,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -121139,8 +121139,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -123178,8 +123178,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -178231,8 +178231,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -180270,8 +180270,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -182309,8 +182309,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
@@ -184348,8 +184348,8 @@
          {
           "DataTime": "2026-03-04T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫雨",
+           "WeatherCode": "08"
           }
          },
          {
