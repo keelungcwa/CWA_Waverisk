@@ -1,16 +1,16 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "identifier": "0068b6d6-657e-4f82-8758-86dd9ed28282",
+  "identifier": "0fb3213c-ed51-4c8d-8ab8-74f3adc7d193",
   "Email": "od@cwa.gov.tw",
-  "sent": "2026-03-05T03:41:43+08:00",
+  "sent": "2026-03-06T03:20:21+08:00",
   "status": "Actual",
   "msgType": "Issue",
   "dataid": "B0083-005",
   "scope": "Public",
   "dataset": {
    "Description": "海岸異常浪發生風險",
-   "DateTime": "2026-03-05T08:00:00+08:00",
+   "DateTime": "2026-03-06T08:00:00+08:00",
    "Location": [
     {
      "LocationName": "新北龍洞",
@@ -30,35 +30,35 @@
     },
     {
      "LocationName": "高雄西子灣",
-     "RiskValue": "0"
+     "RiskValue": "2"
     },
     {
      "LocationName": "桃園永安",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "台南安平",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "花蓮石梯坪",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "台東富岡",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "台中台中港",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "雲林萡子寮",
      "RiskValue": "1"
     },
     {
+     "LocationName": "台南安平",
+     "RiskValue": "2"
+    },
+    {
+     "LocationName": "花蓮石梯坪",
+     "RiskValue": "2"
+    },
+    {
+     "LocationName": "台東富岡",
+     "RiskValue": "2"
+    },
+    {
+     "LocationName": "台中台中港",
+     "RiskValue": "2"
+    },
+    {
+     "LocationName": "雲林萡子寮",
+     "RiskValue": "2"
+    },
+    {
      "LocationName": "嘉義布袋",
-     "RiskValue": "0"
+     "RiskValue": "2"
     },
     {
      "LocationName": "屏東興海",
