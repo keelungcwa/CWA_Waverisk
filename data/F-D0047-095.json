@@ -1,9 +1,9 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "Identifier": "19081818-214c-4cbf-9281-111442ef18f7",
+  "Identifier": "3aa182ac-7b1b-46ee-ab36-add1670265aa",
   "Sender": "weather@cwa.gov.tw",
-  "Sent": "2026-03-11T05:07:49+08:00",
+  "Sent": "2026-03-11T06:15:17+08:00",
   "Status": "Actual",
   "Scope": "Public",
   "MsgType": "Issue",
@@ -80,7 +80,7 @@
      "StartTime": "2026-03-11T06:00:00+08:00",
      "EndTime": "2026-03-14T06:00:00+08:00"
     },
-    "Update": "2026-03-11T05:07:49+08:00"
+    "Update": "2026-03-11T06:15:17+08:00"
    },
    "Locations": {
     "LocationsName": [
@@ -1420,7 +1420,7 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏東"
+           "WaveDirection": "東北"
           }
          },
          {
@@ -1599,67 +1599,67 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.4"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.6"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.6"
           }
          },
          {
@@ -3357,7 +3357,7 @@
          {
           "DataTime": "2026-03-12T06:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "東北"
+           "WaveDirection": "偏東"
           }
          },
          {
@@ -3471,7 +3471,7 @@
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏東"
+           "WaveDirection": "東北"
           }
          },
          {
@@ -3572,13 +3572,13 @@
          {
           "DataTime": "2026-03-12T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.9"
+           "WavePeriod": "5.0"
           }
          },
          {
           "DataTime": "2026-03-12T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.0"
+           "WavePeriod": "5.1"
           }
          },
          {
@@ -3638,73 +3638,73 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.5"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.5"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.6"
           }
          }
         ]
@@ -5617,7 +5617,7 @@
          {
           "DataTime": "2026-03-12T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.1"
+           "WavePeriod": "5.2"
           }
          },
          {
@@ -5683,67 +5683,67 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.8"
+           "WavePeriod": "7.7"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.9"
+           "WavePeriod": "7.8"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "8.0"
+           "WavePeriod": "7.9"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "8.0"
+           "WavePeriod": "8.1"
           }
          }
         ]
@@ -7638,7 +7638,7 @@
          {
           "DataTime": "2026-03-12T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.6"
           }
          },
          {
@@ -7716,61 +7716,61 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.5"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.8"
+           "WavePeriod": "7.7"
           }
          },
          {
@@ -7782,7 +7782,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.8"
+           "WavePeriod": "7.9"
           }
          }
         ]
@@ -9755,67 +9755,67 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.5"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.8"
+           "WavePeriod": "7.7"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.9"
+           "WavePeriod": "7.8"
           }
          },
          {
@@ -11674,7 +11674,7 @@
          {
           "DataTime": "2026-03-11T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.5"
           }
          },
          {
@@ -11710,7 +11710,7 @@
          {
           "DataTime": "2026-03-12T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.1"
+           "WavePeriod": "6.0"
           }
          },
          {
@@ -11794,73 +11794,73 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.4"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.4"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.5"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.6"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.8"
           }
          }
         ]
@@ -13725,7 +13725,7 @@
          {
           "DataTime": "2026-03-11T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.1"
+           "WavePeriod": "6.0"
           }
          },
          {
@@ -13827,7 +13827,7 @@
          {
           "DataTime": "2026-03-13T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.1"
+           "WavePeriod": "6.0"
           }
          },
          {
@@ -13839,67 +13839,67 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.0"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.0"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.2"
+           "WavePeriod": "6.0"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "7.2"
           }
          }
         ]
@@ -15603,7 +15603,7 @@
          {
           "DataTime": "2026-03-12T12:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "東北"
+           "WaveDirection": "偏東"
           }
          },
          {
@@ -15824,7 +15824,7 @@
          {
           "DataTime": "2026-03-12T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "6.0"
           }
          },
          {
@@ -15878,61 +15878,61 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.4"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.6"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.8"
+           "WavePeriod": "7.7"
           }
          },
          {
@@ -17839,7 +17839,7 @@
          {
           "DataTime": "2026-03-12T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.2"
+           "WavePeriod": "6.3"
           }
          },
          {
@@ -17911,61 +17911,61 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.6"
           }
          },
          {
@@ -19944,7 +19944,7 @@
          {
           "DataTime": "2026-03-13T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.7"
           }
          },
          {
@@ -19956,61 +19956,61 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.5"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.6"
           }
          },
          {
@@ -21995,67 +21995,67 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.5"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.6"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.6"
           }
          }
         ]
@@ -24040,55 +24040,55 @@
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.4"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.5"
           }
          },
          {
@@ -26013,7 +26013,7 @@
          {
           "DataTime": "2026-03-12T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.1"
+           "WavePeriod": "6.2"
           }
          },
          {
@@ -26079,61 +26079,61 @@
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.4"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.6"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.6"
           }
          }
         ]
@@ -27980,7 +27980,7 @@
          {
           "DataTime": "2026-03-11T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.6"
           }
          },
          {
@@ -28070,7 +28070,7 @@
          {
           "DataTime": "2026-03-13T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.4"
           }
          },
          {
@@ -28124,55 +28124,55 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.8"
+           "WavePeriod": "7.5"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.9"
+           "WavePeriod": "7.8"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "8.0"
+           "WavePeriod": "7.9"
           }
          }
         ]
@@ -29978,7 +29978,7 @@
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏東"
+           "WaveDirection": "東北"
           }
          },
          {
@@ -30157,61 +30157,61 @@
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.4"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.5"
           }
          }
         ]
@@ -32196,61 +32196,61 @@
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.4"
           }
          }
         ]
@@ -34235,61 +34235,61 @@
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.4"
           }
          }
         ]
@@ -35939,7 +35939,7 @@
          {
           "DataTime": "2026-03-11T09:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "東北"
+           "WaveDirection": "偏東"
           }
          },
          {
@@ -36125,7 +36125,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏東"
+           "WaveDirection": "東北"
           }
          }
         ]
@@ -36214,7 +36214,7 @@
          {
           "DataTime": "2026-03-12T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.2"
+           "WavePeriod": "6.3"
           }
          },
          {
@@ -36268,7 +36268,7 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.4"
           }
          },
          {
@@ -36280,55 +36280,55 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.4"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.8"
+           "WavePeriod": "7.6"
           }
          }
         ]
@@ -38319,55 +38319,55 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.3"
           }
          }
         ]
@@ -40185,7 +40185,7 @@
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏東"
+           "WaveDirection": "東北"
           }
          },
          {
@@ -40364,49 +40364,49 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.3"
           }
          }
         ]
@@ -42379,7 +42379,7 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.4"
           }
          },
          {
@@ -42397,55 +42397,55 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.2"
           }
          }
         ]
@@ -44436,55 +44436,55 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.1"
           }
          }
         ]
@@ -46433,7 +46433,7 @@
          {
           "DataTime": "2026-03-13T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.4"
           }
          },
          {
@@ -46469,61 +46469,61 @@
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.8"
           }
          }
         ]
@@ -48514,55 +48514,55 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.7"
+           "WavePeriod": "7.6"
           }
          }
         ]
@@ -50368,7 +50368,7 @@
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏東"
+           "WaveDirection": "東北"
           }
          },
          {
@@ -50547,61 +50547,61 @@
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.4"
           }
          }
         ]
@@ -52592,55 +52592,55 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.1"
           }
          }
         ]
@@ -54631,55 +54631,55 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          }
         ]
@@ -56718,7 +56718,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "3.9"
+           "WavePeriod": "3.8"
           }
          }
         ]
@@ -60736,7 +60736,7 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.4"
           }
          },
          {
@@ -60796,7 +60796,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.0"
+           "WavePeriod": "3.9"
           }
          }
         ]
@@ -62632,7 +62632,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "西北"
+           "WaveDirection": "偏西"
           }
          }
         ]
@@ -62769,7 +62769,7 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.0"
+           "WavePeriod": "4.9"
           }
          },
          {
@@ -62835,7 +62835,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.0"
+           "WavePeriod": "3.9"
           }
          }
         ]
@@ -66913,7 +66913,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.1"
+           "WavePeriod": "4.0"
           }
          }
         ]
@@ -68766,7 +68766,7 @@
          {
           "DataTime": "2026-03-11T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.2"
+           "WavePeriod": "4.1"
           }
          },
          {
@@ -68916,13 +68916,13 @@
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.6"
+           "WavePeriod": "4.5"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.5"
+           "WavePeriod": "4.4"
           }
          },
          {
@@ -70871,7 +70871,7 @@
          {
           "DataTime": "2026-03-12T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.1"
           }
          },
          {
@@ -70883,13 +70883,13 @@
          {
           "DataTime": "2026-03-13T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.3"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-13T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.5"
           }
          },
          {
@@ -70949,7 +70949,7 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.4"
           }
          },
          {
@@ -70961,37 +70961,37 @@
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.5"
           }
          }
         ]
@@ -74860,13 +74860,13 @@
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "西北"
+           "WaveDirection": "偏西"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏西"
+           "WaveDirection": "西南"
           }
          }
         ]
@@ -74877,7 +74877,7 @@
          {
           "DataTime": "2026-03-11T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.9"
+           "WavePeriod": "4.8"
           }
          },
          {
@@ -75009,7 +75009,7 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.3"
           }
          },
          {
@@ -75045,19 +75045,19 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.2"
+           "WavePeriod": "4.1"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.4"
+           "WavePeriod": "4.3"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.5"
+           "WavePeriod": "4.4"
           }
          },
          {
@@ -77072,13 +77072,13 @@
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.1"
           }
          },
          {
@@ -77090,25 +77090,25 @@
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.1"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.0"
+           "WavePeriod": "5.8"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.6"
           }
          }
         ]
@@ -79003,7 +79003,7 @@
          {
           "DataTime": "2026-03-12T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.5"
+           "WavePeriod": "4.4"
           }
          },
          {
@@ -79105,43 +79105,43 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.1"
+           "WavePeriod": "5.8"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.9"
           }
          },
          {
@@ -81138,55 +81138,55 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.6"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.0"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.2"
           }
          }
         ]
@@ -83177,49 +83177,49 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.8"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.8"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.1"
           }
          },
          {
@@ -85240,31 +85240,31 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.8"
+           "WavePeriod": "4.7"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.8"
+           "WavePeriod": "4.7"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.2"
+           "WavePeriod": "6.0"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.3"
           }
          }
         ]
@@ -87076,7 +87076,7 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "西北"
+           "WaveDirection": "偏北"
           }
          },
          {
@@ -87291,19 +87291,19 @@
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.1"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.6"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.8"
           }
          }
         ]
@@ -89330,19 +89330,19 @@
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.1"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.8"
           }
          }
         ]
@@ -91369,19 +91369,19 @@
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.1"
+           "WavePeriod": "5.0"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.6"
           }
          }
         ]
@@ -93360,7 +93360,7 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.7"
           }
          },
          {
@@ -93378,13 +93378,13 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.1"
+           "WavePeriod": "5.2"
           }
          },
          {
@@ -93402,7 +93402,7 @@
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.9"
+           "WavePeriod": "5.0"
           }
          },
          {
@@ -93414,13 +93414,13 @@
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.3"
+           "WavePeriod": "5.2"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.4"
           }
          }
         ]
@@ -95423,19 +95423,19 @@
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.8"
+           "WavePeriod": "4.9"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.8"
+           "WavePeriod": "4.9"
           }
          },
          {
@@ -95453,13 +95453,13 @@
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.1"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.3"
           }
          }
         ]
@@ -97277,7 +97277,7 @@
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏東"
+           "WaveDirection": "偏北"
           }
          },
          {
@@ -97295,7 +97295,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏北"
+           "WaveDirection": "東北"
           }
          }
         ]
@@ -97474,13 +97474,13 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.9"
+           "WavePeriod": "5.0"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.0"
+           "WavePeriod": "5.1"
           }
          },
          {
@@ -97492,13 +97492,13 @@
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.8"
+           "WavePeriod": "4.7"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.0"
+           "WavePeriod": "4.9"
           }
          }
         ]
@@ -99537,7 +99537,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.9"
+           "WavePeriod": "4.8"
           }
          }
         ]
@@ -101349,7 +101349,7 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏北"
+           "WaveDirection": "西北"
           }
          },
          {
@@ -101576,7 +101576,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.9"
+           "WavePeriod": "4.8"
           }
          }
         ]
@@ -103573,7 +103573,7 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.0"
+           "WavePeriod": "6.1"
           }
          },
          {
@@ -103615,7 +103615,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.7"
+           "WavePeriod": "4.6"
           }
          }
         ]
@@ -105433,13 +105433,13 @@
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "東北"
+           "WaveDirection": "偏北"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "東南"
+           "WaveDirection": "東北"
           }
          },
          {
@@ -107675,13 +107675,13 @@
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.1"
+           "WavePeriod": "5.2"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.3"
           }
          },
          {
@@ -107693,7 +107693,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.8"
+           "WavePeriod": "4.7"
           }
          }
         ]
@@ -109505,7 +109505,7 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏北"
+           "WaveDirection": "東南"
           }
          },
          {
@@ -109720,7 +109720,7 @@
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.3"
           }
          },
          {
@@ -111544,7 +111544,7 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "東南"
+           "WaveDirection": "偏東"
           }
          },
          {
@@ -111556,7 +111556,7 @@
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏東"
+           "WaveDirection": "東南"
           }
          },
          {
@@ -111741,13 +111741,13 @@
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.1"
+           "WavePeriod": "5.2"
           }
          },
          {
@@ -111771,7 +111771,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.8"
+           "WavePeriod": "4.7"
           }
          }
         ]
@@ -115622,7 +115622,7 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏北"
+           "WaveDirection": "西南"
           }
          },
          {
@@ -115837,7 +115837,7 @@
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.3"
           }
          },
          {
@@ -117667,13 +117667,13 @@
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏北"
+           "WaveDirection": "偏南"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏北"
+           "WaveDirection": "偏南"
           }
          },
          {
@@ -117870,13 +117870,13 @@
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.0"
+           "WavePeriod": "5.1"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.3"
           }
          },
          {
@@ -121948,7 +121948,7 @@
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.3"
           }
          },
          {
@@ -123772,7 +123772,7 @@
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏南"
+           "WaveDirection": "偏東"
           }
          },
          {
@@ -123981,7 +123981,7 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.5"
           }
          },
          {
@@ -126038,7 +126038,7 @@
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.3"
+           "WavePeriod": "5.4"
           }
          },
          {
@@ -130122,7 +130122,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.3"
           }
          }
         ]
@@ -132155,7 +132155,7 @@
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.3"
+           "WavePeriod": "5.4"
           }
          },
          {
@@ -136215,7 +136215,7 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.0"
+           "WavePeriod": "4.1"
           }
          },
          {
@@ -136233,13 +136233,13 @@
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.4"
+           "WavePeriod": "4.5"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.4"
+           "WavePeriod": "4.5"
           }
          }
         ]
@@ -138075,7 +138075,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏北"
+           "WaveDirection": "西北"
           }
          }
         ]
@@ -138260,7 +138260,7 @@
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.4"
+           "WavePeriod": "4.5"
           }
          },
          {
@@ -140311,7 +140311,7 @@
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.9"
+           "WavePeriod": "5.0"
           }
          },
          {
@@ -142314,7 +142314,7 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.3"
+           "WavePeriod": "5.2"
           }
          },
          {
@@ -142356,7 +142356,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "3.9"
+           "WavePeriod": "4.0"
           }
          }
         ]
@@ -146434,7 +146434,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "3.7"
+           "WavePeriod": "3.8"
           }
          }
         ]
@@ -148473,7 +148473,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "3.7"
+           "WavePeriod": "3.8"
           }
          }
         ]
@@ -154398,7 +154398,7 @@
          {
           "DataTime": "2026-03-11T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.6"
+           "WavePeriod": "4.5"
           }
          },
          {
@@ -156437,7 +156437,7 @@
          {
           "DataTime": "2026-03-11T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.6"
+           "WavePeriod": "4.5"
           }
          },
          {
@@ -162560,7 +162560,7 @@
          {
           "DataTime": "2026-03-11T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.6"
+           "WavePeriod": "4.5"
           }
          },
          {
@@ -168719,7 +168719,7 @@
          {
           "DataTime": "2026-03-12T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.5"
           }
          },
          {
@@ -168791,79 +168791,79 @@
          {
           "DataTime": "2026-03-13T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.4"
           }
          }
         ]
@@ -170836,61 +170836,61 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.4"
           }
          },
          {
@@ -170902,7 +170902,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.5"
           }
          }
         ]
@@ -172797,7 +172797,7 @@
          {
           "DataTime": "2026-03-12T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.6"
           }
          },
          {
@@ -172875,7 +172875,7 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.6"
           }
          },
          {
@@ -172887,49 +172887,49 @@
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.2"
           }
          },
          {
@@ -174836,7 +174836,7 @@
          {
           "DataTime": "2026-03-12T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.5"
           }
          },
          {
@@ -174914,7 +174914,7 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.5"
           }
          },
          {
@@ -174926,49 +174926,49 @@
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.1"
           }
          },
          {
@@ -176965,61 +176965,61 @@
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.4"
           }
          }
         ]
@@ -178998,61 +178998,61 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.4"
           }
          },
          {
@@ -181061,43 +181061,43 @@
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.1"
+           "WavePeriod": "5.9"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.1"
+           "WavePeriod": "5.9"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.2"
+           "WavePeriod": "5.9"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.5"
           }
          }
         ]
@@ -183094,49 +183094,49 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.2"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.2"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.4"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.5"
           }
          }
         ]
@@ -185127,49 +185127,49 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.6"
+           "WavePeriod": "7.5"
           }
          },
          {
@@ -187076,7 +187076,7 @@
          {
           "DataTime": "2026-03-12T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.1"
+           "WavePeriod": "5.2"
           }
          },
          {
@@ -187154,55 +187154,55 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.4"
           }
          },
          {
@@ -187214,7 +187214,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.5"
           }
          }
         ]
@@ -189193,55 +189193,55 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.3"
           }
          },
          {
@@ -191232,55 +191232,55 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.2"
+           "WavePeriod": "6.9"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.2"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.3"
           }
          },
          {
@@ -193265,61 +193265,61 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.1"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.1"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.5"
+           "WavePeriod": "7.4"
           }
          },
          {
@@ -193331,7 +193331,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.5"
           }
          }
         ]
@@ -195232,7 +195232,7 @@
          {
           "DataTime": "2026-03-12T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.9"
+           "WavePeriod": "5.0"
           }
          },
          {
@@ -195310,55 +195310,55 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.0"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.3"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.4"
+           "WavePeriod": "7.3"
           }
          },
          {
@@ -195370,7 +195370,7 @@
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.3"
+           "WavePeriod": "7.4"
           }
          }
         ]
@@ -197367,43 +197367,43 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.0"
+           "WavePeriod": "3.9"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.1"
+           "WavePeriod": "3.9"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "3.8"
+           "WavePeriod": "3.5"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.1"
+           "WavePeriod": "3.7"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.6"
+           "WavePeriod": "4.2"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.8"
+           "WavePeriod": "4.6"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.3"
+           "WavePeriod": "5.2"
           }
          },
          {
@@ -199400,55 +199400,55 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.7"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.7"
           }
          }
         ]
@@ -201254,7 +201254,7 @@
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏東"
+           "WaveDirection": "東北"
           }
          },
          {
@@ -201445,49 +201445,49 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.2"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.2"
+           "WavePeriod": "5.7"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.7"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.7"
           }
          }
         ]
@@ -203281,7 +203281,7 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WaveDirection": "偏東"
+           "WaveDirection": "東北"
           }
          },
          {
@@ -203460,7 +203460,7 @@
          {
           "DataTime": "2026-03-13T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.5"
           }
          },
          {
@@ -203484,49 +203484,49 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.1"
+           "WavePeriod": "5.6"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.0"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.3"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.5"
           }
          }
         ]
@@ -205523,49 +205523,49 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.0"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "5.9"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.2"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.4"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.3"
           }
          }
         ]
@@ -207544,7 +207544,7 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.4"
           }
          },
          {
@@ -207556,55 +207556,55 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.3"
+           "WavePeriod": "5.2"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.1"
+           "WavePeriod": "5.6"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "5.9"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.4"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.2"
           }
          }
         ]
@@ -209583,61 +209583,61 @@
          {
           "DataTime": "2026-03-14T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.6"
           }
          },
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.0"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.0"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.8"
+           "WavePeriod": "6.5"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.9"
           }
          },
          {
@@ -211634,49 +211634,49 @@
          {
           "DataTime": "2026-03-14T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "5.8"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.6"
+           "WavePeriod": "6.1"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.9"
+           "WavePeriod": "6.6"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.8"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "7.0"
+           "WavePeriod": "6.9"
           }
          },
          {
@@ -213583,7 +213583,7 @@
          {
           "DataTime": "2026-03-12T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.7"
+           "WavePeriod": "4.6"
           }
          },
          {
@@ -213685,7 +213685,7 @@
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.6"
           }
          },
          {
@@ -213697,31 +213697,31 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.5"
+           "WavePeriod": "4.4"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.6"
+           "WavePeriod": "4.5"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.1"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.1"
+           "WavePeriod": "5.9"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.3"
           }
          }
         ]
@@ -217775,13 +217775,13 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.0"
+           "WavePeriod": "4.9"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.0"
+           "WavePeriod": "4.9"
           }
          },
          {
@@ -217793,13 +217793,13 @@
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.8"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.3"
+           "WavePeriod": "6.2"
           }
          }
         ]
@@ -219814,31 +219814,31 @@
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.1"
+           "WavePeriod": "5.0"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.1"
+           "WavePeriod": "5.0"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.3"
+           "WavePeriod": "5.2"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.6"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.1"
+           "WavePeriod": "6.0"
           }
          }
         ]
@@ -221847,37 +221847,37 @@
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.0"
+           "WavePeriod": "4.9"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.0"
+           "WavePeriod": "4.9"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.4"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.0"
+           "WavePeriod": "5.9"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "6.5"
+           "WavePeriod": "6.3"
           }
          }
         ]
@@ -223724,7 +223724,7 @@
          {
           "DataTime": "2026-03-11T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.0"
+           "WavePeriod": "4.9"
           }
          },
          {
@@ -223862,7 +223862,7 @@
          {
           "DataTime": "2026-03-14T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.7"
           }
          },
          {
@@ -223874,49 +223874,49 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-14T12:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.3"
+           "WavePeriod": "5.2"
           }
          },
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.1"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.2"
+           "WavePeriod": "5.0"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.3"
+           "WavePeriod": "5.0"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.2"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.7"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.7"
           }
          }
         ]
@@ -225913,7 +225913,7 @@
          {
           "DataTime": "2026-03-14T09:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.7"
           }
          },
          {
@@ -225925,37 +225925,37 @@
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-14T18:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.2"
           }
          },
          {
           "DataTime": "2026-03-14T21:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.4"
+           "WavePeriod": "5.1"
           }
          },
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.3"
           }
          },
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.8"
+           "WavePeriod": "5.5"
           }
          },
          {
           "DataTime": "2026-03-15T06:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.9"
+           "WavePeriod": "5.8"
           }
          }
         ]
@@ -227982,7 +227982,7 @@
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.6"
+           "WavePeriod": "5.7"
           }
          },
          {
@@ -230003,7 +230003,7 @@
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.6"
           }
          },
          {
@@ -236024,7 +236024,7 @@
          {
           "DataTime": "2026-03-12T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.2"
+           "WavePeriod": "4.3"
           }
          },
          {
@@ -236138,7 +236138,7 @@
          {
           "DataTime": "2026-03-15T00:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "3.8"
+           "WavePeriod": "3.9"
           }
          },
          {
@@ -240222,7 +240222,7 @@
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "4.6"
+           "WavePeriod": "4.7"
           }
          },
          {
@@ -246315,7 +246315,7 @@
          {
           "DataTime": "2026-03-14T15:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.3"
+           "WavePeriod": "5.4"
           }
          },
          {
@@ -246339,7 +246339,7 @@
          {
           "DataTime": "2026-03-15T03:00:00+08:00",
           "ElementValue": {
-           "WavePeriod": "5.5"
+           "WavePeriod": "5.6"
           }
          },
          {
