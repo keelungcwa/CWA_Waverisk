@@ -1,9 +1,9 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "Identifier": "659752a5-cf5f-4a3c-940e-24ae168cee24",
+  "Identifier": "8753ac99-403c-487e-98ad-4928c3c86342",
   "Sender": "weather@cwa.gov.tw",
-  "Sent": "2026-03-29T05:04:54+08:00",
+  "Sent": "2026-03-29T06:14:26+08:00",
   "Status": "Actual",
   "Scope": "Public",
   "MsgType": "Issue",
@@ -80,7 +80,7 @@
      "StartTime": "2026-03-29T06:00:00+08:00",
      "EndTime": "2026-04-01T06:00:00+08:00"
     },
-    "Update": "2026-03-29T05:04:54+08:00"
+    "Update": "2026-03-29T06:14:26+08:00"
    },
    "Locations": {
     "LocationsName": [
@@ -628,13 +628,13 @@
          {
           "DataTime": "2026-03-29T06:00:00+08:00",
           "ElementValue": {
-           "SkyCover": "41.0"
+           "SkyCover": "93.0"
           }
          },
          {
           "DataTime": "2026-03-29T09:00:00+08:00",
           "ElementValue": {
-           "SkyCover": "34.0"
+           "SkyCover": "59.0"
           }
          },
          {
@@ -838,8 +838,8 @@
          {
           "DataTime": "2026-03-29T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "多雲",
+           "WeatherCode": "04"
           }
          },
          {
@@ -4706,13 +4706,13 @@
          {
           "DataTime": "2026-03-29T06:00:00+08:00",
           "ElementValue": {
-           "SkyCover": "11.0"
+           "SkyCover": "89.0"
           }
          },
          {
           "DataTime": "2026-03-29T09:00:00+08:00",
           "ElementValue": {
-           "SkyCover": "23.0"
+           "SkyCover": "58.0"
           }
          },
          {
@@ -4909,15 +4909,15 @@
          {
           "DataTime": "2026-03-29T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "陰天",
+           "WeatherCode": "07"
           }
          },
          {
           "DataTime": "2026-03-29T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "多雲",
+           "WeatherCode": "04"
           }
          },
          {
@@ -6745,13 +6745,13 @@
          {
           "DataTime": "2026-03-29T06:00:00+08:00",
           "ElementValue": {
-           "SkyCover": "13.0"
+           "SkyCover": "31.0"
           }
          },
          {
           "DataTime": "2026-03-29T09:00:00+08:00",
           "ElementValue": {
-           "SkyCover": "4.0"
+           "SkyCover": "53.0"
           }
          },
          {
@@ -6955,8 +6955,8 @@
          {
           "DataTime": "2026-03-29T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "多雲",
+           "WeatherCode": "04"
           }
          },
          {
@@ -8790,7 +8790,7 @@
          {
           "DataTime": "2026-03-29T09:00:00+08:00",
           "ElementValue": {
-           "SkyCover": "8.0"
+           "SkyCover": "36.0"
           }
          },
          {
