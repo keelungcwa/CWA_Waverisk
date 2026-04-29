@@ -1,56 +1,56 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "identifier": "63a0ffb2-cddf-48ef-ba6b-6dde3afb7d4d",
+  "identifier": "dd129381-e0b2-4ae9-abcb-d32bbfb7e92c",
   "Email": "od@cwa.gov.tw",
-  "sent": "2026-04-29T03:29:57+08:00",
+  "sent": "2026-04-30T03:49:13+08:00",
   "status": "Actual",
   "msgType": "Issue",
   "dataid": "B0083-006",
   "scope": "Public",
   "dataset": {
    "Description": "海岸異常浪發生風險",
-   "DateTime": "2026-04-29T14:00:00+08:00",
+   "DateTime": "2026-04-30T14:00:00+08:00",
    "Location": [
     {
      "LocationName": "新北龍洞",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "基隆碧砂",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "新北野柳",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "宜蘭內埤",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "高雄西子灣",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "桃園永安",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "台南安平",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "花蓮石梯坪",
-     "RiskValue": "0"
-    },
-    {
-     "LocationName": "台東富岡",
      "RiskValue": "2"
     },
     {
-     "LocationName": "台中台中港",
+     "LocationName": "基隆碧砂",
+     "RiskValue": "2"
+    },
+    {
+     "LocationName": "新北野柳",
+     "RiskValue": "2"
+    },
+    {
+     "LocationName": "宜蘭內埤",
+     "RiskValue": "1"
+    },
+    {
+     "LocationName": "高雄西子灣",
+     "RiskValue": "1"
+    },
+    {
+     "LocationName": "桃園永安",
+     "RiskValue": "2"
+    },
+    {
+     "LocationName": "台南安平",
+     "RiskValue": "2"
+    },
+    {
+     "LocationName": "花蓮石梯坪",
+     "RiskValue": "2"
+    },
+    {
+     "LocationName": "台東富岡",
      "RiskValue": "0"
+    },
+    {
+     "LocationName": "台中台中港",
+     "RiskValue": "2"
     },
     {
      "LocationName": "雲林萡子寮",
@@ -66,11 +66,11 @@
     },
     {
      "LocationName": "苗栗外埔港",
-     "RiskValue": "0"
+     "RiskValue": "2"
     },
     {
      "LocationName": "新竹南寮",
-     "RiskValue": "0"
+     "RiskValue": "2"
     },
     {
      "LocationName": "彰化彰濱",
