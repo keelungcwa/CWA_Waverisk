@@ -41,7 +41,7 @@ jobs:
     - name: Run visualization script
       env:
         CWA_API_KEY: ${{ secrets.CWA_API_KEY }}
-      run: python CWA_Waverisk.py
+      run: python waverisk.py
 
     - name: Commit and push images and data to main branch
       run: |
