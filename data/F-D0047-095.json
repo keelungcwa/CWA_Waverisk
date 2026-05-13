@@ -1,9 +1,9 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "Identifier": "8034d562-2d52-46fb-b04e-92c184a3c1c4",
+  "Identifier": "114db643-51b5-4cb4-8518-3fe235c249a6",
   "Sender": "weather@cwa.gov.tw",
-  "Sent": "2026-05-14T05:06:20+08:00",
+  "Sent": "2026-05-14T06:14:17+08:00",
   "Status": "Actual",
   "Scope": "Public",
   "MsgType": "Issue",
@@ -80,7 +80,7 @@
      "StartTime": "2026-05-14T06:00:00+08:00",
      "EndTime": "2026-05-17T06:00:00+08:00"
     },
-    "Update": "2026-05-14T05:06:20+08:00"
+    "Update": "2026-05-14T06:14:17+08:00"
    },
    "Locations": {
     "LocationsName": [
@@ -831,8 +831,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -2870,8 +2870,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -4909,8 +4909,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -6948,8 +6948,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -8987,8 +8987,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -15104,8 +15104,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -17143,8 +17143,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -19182,8 +19182,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -21221,8 +21221,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -23260,8 +23260,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -45689,8 +45689,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -55884,8 +55884,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -57923,8 +57923,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -62001,8 +62001,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -64040,8 +64040,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -68118,8 +68118,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -70157,8 +70157,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -72196,8 +72196,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -90547,8 +90547,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -92586,8 +92586,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -94625,8 +94625,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -96664,8 +96664,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -98703,8 +98703,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -100742,8 +100742,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -102781,8 +102781,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -104820,8 +104820,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -106859,8 +106859,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -151717,8 +151717,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -165990,8 +165990,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -206770,8 +206770,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -235316,8 +235316,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -237355,8 +237355,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -239394,8 +239394,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -245511,8 +245511,8 @@
          {
           "DataTime": "2026-05-14T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
