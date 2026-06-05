@@ -1,9 +1,9 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "Identifier": "14ae24f3-9901-4fb7-b681-6c7bc5fb86e1",
+  "Identifier": "39b50b40-f1f4-4fa5-b295-c5b09d686d70",
   "Sender": "weather@cwa.gov.tw",
-  "Sent": "2026-06-06T04:52:48+08:00",
+  "Sent": "2026-06-06T06:14:01+08:00",
   "Status": "Actual",
   "Scope": "Public",
   "MsgType": "Issue",
@@ -80,7 +80,7 @@
      "StartTime": "2026-06-06T06:00:00+08:00",
      "EndTime": "2026-06-09T06:00:00+08:00"
     },
-    "Update": "2026-06-06T04:52:48+08:00"
+    "Update": "2026-06-06T06:14:01+08:00"
    },
    "Locations": {
     "LocationsName": [
@@ -2870,8 +2870,8 @@
          {
           "DataTime": "2026-06-06T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -143561,8 +143561,8 @@
          {
           "DataTime": "2026-06-06T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -147639,8 +147639,8 @@
          {
           "DataTime": "2026-06-06T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -227160,8 +227160,8 @@
          {
           "DataTime": "2026-06-06T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -237355,8 +237355,8 @@
          {
           "DataTime": "2026-06-06T06:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
