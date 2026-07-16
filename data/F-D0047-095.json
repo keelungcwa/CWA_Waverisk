@@ -1,9 +1,9 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "Identifier": "10ab4c02-518a-4366-9701-81c59daaccdd",
+  "Identifier": "527f8878-0c4e-4e4f-9512-1551fac2a72f",
   "Sender": "weather@cwa.gov.tw",
-  "Sent": "2026-07-17T04:28:33+08:00",
+  "Sent": "2026-07-17T06:14:20+08:00",
   "Status": "Actual",
   "Scope": "Public",
   "MsgType": "Issue",
@@ -80,7 +80,7 @@
      "StartTime": "2026-07-17T06:00:00+08:00",
      "EndTime": "2026-07-20T06:00:00+08:00"
     },
-    "Update": "2026-07-17T04:28:33+08:00"
+    "Update": "2026-07-17T06:14:20+08:00"
    },
    "Locations": {
     "LocationsName": [
