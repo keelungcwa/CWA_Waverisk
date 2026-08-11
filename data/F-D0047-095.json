@@ -1,9 +1,9 @@
 {
  "cwaopendata": {
   "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
-  "Identifier": "50f7d388-78be-4f3b-930d-7052c3f38140",
+  "Identifier": "4d722bc7-48de-4fb7-af63-0a49d594c572",
   "Sender": "weather@cwa.gov.tw",
-  "Sent": "2026-08-12T05:20:15+08:00",
+  "Sent": "2026-08-12T06:28:41+08:00",
   "Status": "Actual",
   "Scope": "Public",
   "MsgType": "Issue",
@@ -80,7 +80,7 @@
      "StartTime": "2026-08-12T06:00:00+08:00",
      "EndTime": "2026-08-15T06:00:00+08:00"
     },
-    "Update": "2026-08-12T05:20:15+08:00"
+    "Update": "2026-08-12T06:28:41+08:00"
    },
    "Locations": {
     "LocationsName": [
@@ -98710,8 +98710,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -100749,8 +100749,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -102788,8 +102788,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -104827,8 +104827,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -106866,8 +106866,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -108905,8 +108905,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -110944,8 +110944,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -112983,8 +112983,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "晴天",
-           "WeatherCode": "01"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -115022,8 +115022,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -117061,8 +117061,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -123178,8 +123178,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "多雲",
-           "WeatherCode": "04"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
@@ -125217,8 +125217,8 @@
          {
           "DataTime": "2026-08-12T09:00:00+08:00",
           "ElementValue": {
-           "Weather": "陰天",
-           "WeatherCode": "07"
+           "Weather": "短暫陣雨或雷雨",
+           "WeatherCode": "15"
           }
          },
          {
